@@ -1,1 +1,1 @@
-https://gamest23.github.io/PD3WwiseAudioModding/0index/
+https://gamest23.github.io/PD3WwiseAudioModding
