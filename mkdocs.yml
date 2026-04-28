@@ -25,6 +25,10 @@ theme:
      - navigation.footer
      - navigation.path
 
+# Plugins
+plugins:
+  - open-in-new-tab
+
 # Icon/emoji Support
 markdown_extensions:
   - attr_list
@@ -46,6 +50,7 @@ nav:
     - Post Restart: First Time Setup/Post Restart.md
     - UE Project: First Time Setup/UE Project.md
     - Tips: First Time Setup/Tips.md
+  - Wwise information: WwiseInfo/WwiseInfo.md
   - Standard Enemies SFX:
     - Walking: Enemies SFX/Standard/Walking.md
     - Guard Lure Interact: Enemies SFX/Standard/Guard Lure Interact.md
