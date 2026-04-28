@@ -65,6 +65,53 @@ nav:
     - Zapper (tazer): Enemies VFX/Specials/Zapper.md
   - FBI Voice Lines:
     - FBI: Enemies VFX/FBI/FBI.md
+  - Enemy Misc.:
+    - Dispatch Radio Response: Enemy Misc/Dispatch.md
+    - Radio Dispatcher: Enemy Misc/Guard Radio Small Talk.md
+    - First Responder Megaphone: Enemy Misc/Megaphone Guy.md
+    - Smalltalk Police: Enemy Misc/Small-Talk Police.md
+#  - Shade - Core Heists:
+#    - No Rest for the Wicked: Shade/Core Heists/NRFTW.md
+#    - Road Rage:
+#    - Dirty Ice:
+#    - Rock the Cradle:
+#    - Under the Surphaze:
+#    - Gold and Sharke:
+#    - 99 Boxes:
+#    - Touch the Sky:
+#  - Shade - Side Hustles:
+#    - Turbid Station:
+#    - Cook Off:
+#    - Diamond District:
+#    - First World Bank: 
+#    - Party Powder:
+#    - Shopping Spree:
+#  - Shade - The Bad Apple:
+#    - Syntax Error:
+#    - Boys in Blue:
+#    - Houston Breakout:
+#    - Fear & Greed:
+#  - Shade - Smash & Grab:
+#    - Bank Withdrawal:
+#    - Search and Seizure:
+#  - Shade - Tutorials:
+#    - Combat:
+#    - Social Stealth:
+#    - Crowd Control:
+  - Building Sounds:
+    - Alarm(s): Building Sounds/Alarm.md
+    - Elevator: Building Sounds/Elevator.md
+  - Mod Add-ons:
+    - Main Menu Music Jukebox Edition: Mod Add-ons/Main Menu Music Jukebox.md
+#    - Pause Menu Music:
+    - Custom Heist Music: Mod Add-ons/Custom Heist Music.md
+  - Misc.:
+    - Radio Lure: Misc/Radio Lure.md
+    - Phone Hacking Circle: Misc/Phone Hacking Circle.md
+    - Main Menu Music Event: Misc/Main Menu Music Event.md
+    - Overkill Delivery Drone: Misc/Overkill Delivery Drone.md
+    - Player Phone: Misc/Player Phone.md
+  - Unreal Engine Paking: UE Pak.md
   - About:
     - License: license.md
     - Release Notes: release-notes.md
