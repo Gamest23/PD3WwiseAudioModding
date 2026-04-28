@@ -49,7 +49,7 @@ nav:
     - Wwise: First Time Setup/Wwise.md
     - Post Restart: First Time Setup/Post Restart.md
     - UE Project: First Time Setup/UE Project.md
-    - Tips: First Time Setup/Tips.md
+  - Tips: First Time Setup/Tips.md
   - Wwise information: WwiseInfo/WwiseInfo.md
   - Standard Enemies SFX:
     - Walking: Enemies SFX/Standard/Walking.md
@@ -133,4 +133,4 @@ extra:
         link: https://github.com/Gamest23/PD3WwiseAudioModding
       - icon: Icons/mws_logo_white
         link: https://modworkshop.net/user/gamest23
-copyright: Copyright &copy; 2026
+copyright: Copyright &copy; 2026 All rights reserved

@@ -1,1 +1,5 @@
+---
+icon: material/snowshoeing
+---
+
 [NPC Sliding SFX.wwu](Downloads/NPC%20Sliding%20SFX.wwu)
