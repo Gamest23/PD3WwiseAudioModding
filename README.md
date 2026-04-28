@@ -4,6 +4,14 @@ I also have never made a tutorial in this scale before, please say something if 
 
 Audio modding is painful
 
+Website:
+
 https://gamest23.github.io/PD3WwiseAudioModding
+
+Plugins Used:
+
+[mkdocs-open-in-new-tab 1.0.8](https://pypi.org/project/mkdocs-open-in-new-tab/)
+
+----
 
 THIS PROJECT IS NOT COMPLETE
