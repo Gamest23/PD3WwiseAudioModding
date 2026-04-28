@@ -1,4 +1,4 @@
-# First Time Setup | Unreal Engine
+# Unreal Engine
 
 A lot of this guide uses elements of the [Custom Heist Track Tutorial](https://docs.google.com/document/d/1f6ComClQIJrvrdo5Yu-VmFC7ykKrs_8EyKiMkRRfbhc/edit?tab=t.0#heading=h.wjyyevobb0m0) made by [ershiozer](https://modworkshop.net/user/ershiozer), this would have not been possible without their guide.
 

@@ -1,4 +1,4 @@
-# First Time Setup | Post Restart
+# Post Restart
 
 Open the Audiokinetic Launcher again, and go back to the Wwise tab on the left. Under the Installed Versions will be the version you previously installed, click the wrench icon to the right of it and add a desktop shortcut.
 

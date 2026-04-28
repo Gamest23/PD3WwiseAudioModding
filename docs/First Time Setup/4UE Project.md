@@ -1,4 +1,4 @@
-# First Time Setup | PD3 Audio UE Project
+# PD3 Audio UE Project
 
 Download this [.zip file](https://drive.google.com/drive/folders/1YDSSQtWYrXJ70NKoehU4CUyg_M1JJcyx?usp=sharing) to your computer. (it’s  1.2 GB so wait a little)
 
