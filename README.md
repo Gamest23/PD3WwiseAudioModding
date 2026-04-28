@@ -5,3 +5,5 @@ I also have never made a tutorial in this scale before, please say something if 
 Audio modding is painful
 
 https://gamest23.github.io/PD3WwiseAudioModding
+
+THIS PROJECT IS NOT COMPLETE

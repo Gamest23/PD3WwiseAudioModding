@@ -1,3 +1,6 @@
+---
+icon: simple/wwise
+---
 # Wwise
 
 Go ahead and install the [AudioKinetic Launcher](https://www.audiokinetic.com/en/download/). Yes, you do have to make an account with them to install and “activate” the launcher. (make sure to remember your login information, since you need it later)

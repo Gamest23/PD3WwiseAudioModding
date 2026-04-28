@@ -23,6 +23,7 @@ theme:
       accent: deep orange
   features:
      - navigation.footer
+     - navigation.path
 
 # Icon/emoji Support
 markdown_extensions:
@@ -111,10 +112,10 @@ nav:
     - Main Menu Music Event: Misc/Main Menu Music Event.md
     - Overkill Delivery Drone: Misc/Overkill Delivery Drone.md
     - Player Phone: Misc/Player Phone.md
-  - Unreal Engine Paking: UE Pak.md
-  - About:
-    - License: license.md
-    - Release Notes: release-notes.md
+  - Paking Your Mod:
+    - Generate Sound Data: UE Paking/Generate Sound Data.md
+    - Folder Sturcture: UE Paking/Folder Structure.md
+    - Paking:  UE Paking/Paking.md
 
 # Footer
 extra:

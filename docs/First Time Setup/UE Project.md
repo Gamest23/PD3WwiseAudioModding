@@ -1,6 +1,10 @@
+---
+icon: simple/unrealengine
+---
+
 # PD3 Audio UE Project
 
-Download this [.zip file](https://drive.google.com/drive/folders/1YDSSQtWYrXJ70NKoehU4CUyg_M1JJcyx?usp=sharing) to your computer. (it’s  1.2 GB so wait a little)
+Download this [.zip file](https://github.com/Gamest23/PD3AudioModdingUEProject/archive/refs/heads/main.zip) to your computer. (it’s  1.2 GB so wait a little)
 
 Once done, open the .zip file. Make a folder on your desktop (name it whatever you want) and put the contents of that .zip file inside that new folder.
 You can extract the contents by selecting all of them, right click, copy files, right click inside the new folder, and paste.
@@ -37,6 +41,8 @@ Close the pop-up(s) as well the Project settings window.
 
 Click “Save All”, then “Save Selected”
 
+![UEProoj6](img/UEProj6.png)
+
 Restart Unreal Engine (close Unreal Engine and re-open the PAYDAY3.uproject file)
 
-![UEProoj6](img/UEProj6.png)
+And you're done! Browse the available guides on the left and get to moddin!
