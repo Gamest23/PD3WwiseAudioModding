@@ -4,19 +4,7 @@ icon: simple/unrealengine
 
 # Unreal Engine
 
-A lot of this guide uses elements of the [Custom Heist Track Tutorial](https://docs.google.com/document/d/1f6ComClQIJrvrdo5Yu-VmFC7ykKrs_8EyKiMkRRfbhc/edit?tab=t.0#heading=h.wjyyevobb0m0) made by [ershiozer](https://modworkshop.net/user/ershiozer), this would have not been possible without their guide.
-
-This guide shortens it by a large amount.
-
-If you already set up UE and Wwise, click here
-
-Hey, I restarted my computer!
-
-This guide will roughly take 40 GB of storage on your C: drive, ensure you have more than enough storage for this process.
-
-![C drive](img/C drive.png)← this is my C: drive! Hello!
-
-First, we need a specific version of Unreal Engine. To install Unreal Engine, we need the [Epic Games Launcher](https://store.epicgames.com/en-US/download) (don’t worry, it won't add Fortnite to your account). Yes, you do need to make an account if you already don’t have one.
+We need a specific version of Unreal Engine. To install Unreal Engine, we need the [Epic Games Launcher](https://store.epicgames.com/en-US/download) (don’t worry, it won't add Fortnite to your account). Yes, you do need to make an account if you already don’t have one.
 
 While you’re in the Epic Games Launcher, go ahead and claim the free game of the week on the Store tab of the app. You can do this every week, and it is a different game, just a gamer tip.
 

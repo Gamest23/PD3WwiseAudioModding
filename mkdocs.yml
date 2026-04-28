@@ -27,6 +27,7 @@ theme:
 
 # Icon/emoji Support
 markdown_extensions:
+  - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -38,10 +39,13 @@ markdown_extensions:
 nav:
   - Home: index.md
   - First Time Setup:
+    - Disclaimer: First Time Setup/Disclaimer.md
+    - Visual Studio: First Time Setup/Visual Studio.md
     - Unreal Engine: First Time Setup/Unreal Engine.md
     - Wwise: First Time Setup/Wwise.md
     - Post Restart: First Time Setup/Post Restart.md
     - UE Project: First Time Setup/UE Project.md
+    - Tips: First Time Setup/Tips.md
   - Standard Enemies SFX:
     - Walking: Enemies SFX/Standard/Walking.md
     - Guard Lure Interact: Enemies SFX/Standard/Guard Lure Interact.md

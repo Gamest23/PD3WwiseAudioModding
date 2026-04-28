@@ -20,6 +20,24 @@ Once it’s in a new folder, double-click the PAYDAY3.uproject to open the UE pr
 
 This process will take some time, speed will be dependent on how fast your CPU is.
 
+----
+
+If a pop-up does not appear, and doesn't know what app to open for this file format. First open Epic Games and into the Unreal Engine tab, there should be a prompt to have this file extension open Unreal Engine by default.
+
+If there isn’t, go into windows settings, Apps, then Default Apps. At the top, search for .uproject and something similar to the image should appear.
+
+![DefaultApp](img/Default%20App.png)
+
+Click on the available option, scroll down to “Choose an app on your PC” and browse to:
+
+`C:\Program Files\EpicGames\UE_4.27\Engine\Binaries\Win64`
+
+This is where Unreal Engine is installed by default. If you installed it somewhere else, go to where you specifically installed it and follow the folder path above starting at UE_4.27
+
+Within that folder, there is a .exe file named “UE4Editor.exe” either double click it, or select it with a left click and click open. You should now be able to open that .uproject file now.
+
+----
+
 Once it launches, it will ask you if you want to set up your wwise settings, click Yes.
 
 ![UEProj4](img/UEProj4.png) If this appears, just close it.
@@ -45,3 +63,5 @@ Click “Save All”, then “Save Selected”
 Restart Unreal Engine (close Unreal Engine and re-open the PAYDAY3.uproject file)
 
 And you're done! Browse the available guides on the left and get to moddin!
+
+There are some tips on the next page for stuff like, making multiple mods on a single Wwise Project and more!
