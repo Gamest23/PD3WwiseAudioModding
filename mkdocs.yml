@@ -1,7 +1,10 @@
 site_name: PD3 Wwise Audio Modding
 site_url: https://gamest23.github.io/PD3WwiseAudioModding/
+
+# Website Theme/Colors
 theme:
   name: material
+  custom_dir: overrides
   palette:
     # Dark Mode
     - scheme: slate
@@ -20,9 +23,57 @@ theme:
       accent: deep orange
   features:
      - navigation.footer
+
+# Icon/emoji Support
 markdown_extensions:
-  - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-copyright: Copyright &copy; 2026 Gamest23
+      options:
+        custom_icons:
+          - overrides/.icons
+
+# Navigation panels
+nav:
+  - Home: index.md
+  - First Time Setup:
+    - Unreal Engine: First Time Setup/Unreal Engine.md
+    - Wwise: First Time Setup/Wwise.md
+    - Post Restart: First Time Setup/Post Restart.md
+    - UE Project: First Time Setup/UE Project.md
+  - Standard Enemies SFX:
+    - Walking: Enemies SFX/Standard/Walking.md
+    - Guard Lure Interact: Enemies SFX/Standard/Guard Lure Interact.md
+    - Rappel: Enemies SFX/Standard/Rappel.md
+    - Sliding: Enemies SFX/Standard/Sliding.md
+  - Standard Enemies Voice Lines:
+    - All of them: Enemies VFX/Standard/All Standard.md
+  - Specials SFX:
+    - Bulldozer: Enemies SFX/Specials/Bulldozer.md
+    - Cloaker: Enemies SFX/Specials/Cloaker.md
+    - Nader: Enemies SFX/Specials/Nader.md
+    - Shield: Enemies SFX/Specials/Shield.md
+    - Sniper: Enemies SFX/Specials/Sniper.md
+    - Techie: Enemies SFX/Specials/Techie.md
+    - Zapper (tazer): Enemies SFX/Specials/Zapper.md
+  - Specials Voice Lines:
+    - Bulldozer: Enemies VFX/Specials/Bulldozer.md
+    - Cloaker: Enemies VFX/Specials/Cloaker.md
+    - Nader: Enemies VFX/Specials/Nader.md
+    - Shield: Enemies VFX/Specials/Shield.md
+    - Techie: Enemies VFX/Specials/Techie.md
+    - Zapper (tazer): Enemies VFX/Specials/Zapper.md
+  - FBI Voice Lines:
+    - FBI: Enemies VFX/FBI/FBI.md
+  - About:
+    - License: license.md
+    - Release Notes: release-notes.md
+
+# Footer
+extra:
+  social:
+      - icon: simple/github
+        link: https://github.com/Gamest23/PD3WwiseAudioModding
+      - icon: Icons/mws_logo_white
+        link: https://modworkshop.net/user/gamest23
+copyright: Copyright &copy; 2026
