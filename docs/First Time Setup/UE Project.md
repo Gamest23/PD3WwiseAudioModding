@@ -4,7 +4,7 @@ icon: simple/unrealengine
 
 # PD3 Audio UE Project
 
-Download this [.zip file](https://github.com/Gamest23/PD3AudioModdingUEProject/archive/refs/heads/main.zip) to your computer. (it’s  1.2 GB so wait a little)
+Download this [.zip file](https://github.com/Gamest23/PD3AudioModdingUEProject/archive/refs/heads/main.zip) [:simple-github:](https://github.com/Gamest23/PD3AudioModdingUEProject) to your computer. (it’s  1.2 GB so wait a little)
 
 Once done, open the .zip file. Make a folder on your desktop (name it whatever you want) and put the contents of that .zip file inside that new folder.
 You can extract the contents by selecting all of them, right click, copy files, right click inside the new folder, and paste.
@@ -31,9 +31,8 @@ Click Integration Settings, and look for the Installation section.
 ![UEProj5](img/UEProj5.png)
 
 Click the 3 dots on the right side of the empty box, and it will open file explorer
-Navigate to:
 
-Documents > WwiseProjects > (name of your project)
+Navigate to the Wwise Project you just downloaded and extracted from the previous page.
 
 And double-click the .wproj file inside.
 
