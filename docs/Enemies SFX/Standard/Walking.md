@@ -59,7 +59,7 @@ Due to how much this is up to you, this is a separate page entirely that can be 
 
 Importing audio is easy. From file explorer, select the audio you want to use, and drag it onto the respective Container.
 
-A window will open on import settings, for this you want to import it as a Sound SFX. Everything else can be left on its default setting.
+A window will open on import settings, for this you want to import it as a ==Sound SFX==. Everything else can be left on its default setting.
 
 ![ExampleImage](img/ImportExample.gif)
 

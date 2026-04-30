@@ -54,8 +54,9 @@ nav:
     - Wwise: First Time Setup/Wwise.md
     - Post Restart: First Time Setup/Post Restart.md
     - UE Project: First Time Setup/UE Project.md
-  - Tips: First Time Setup/Tips.md
+  - Tips: Tips.md
   - Wwise information: WwiseInfo/WwiseInfo.md
+  - RTPC: RTPC/RTPC.md
   - Standard Enemies SFX:
     - Walking: Enemies SFX/Standard/Walking.md
     - Guard Lure Interact: Enemies SFX/Standard/Guard Lure Interact.md
