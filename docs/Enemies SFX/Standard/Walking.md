@@ -2,6 +2,9 @@
 icon: material/walk
 ---
 
+[1]: https://gamest23.github.io/PD3WwiseAudioModding/First%20Time%20Setup/UE%20Project/
+[3]: https://gamest23.github.io/PD3WwiseAudioModding/WwiseInfo/WwiseInfo/
+
 Download this Work Unit:
 
 [Walking.wwu](Downloads/Walking.wwu)
@@ -14,7 +17,7 @@ Now open the Wwise Project. If the Project was already opened, it may prompt to 
 
 ## Event(s)
 
-Go into the Events tab. The following image of Events[^1^](https://gamest23.github.io/PD3WwiseAudioModding/First%20Time%20Setup/UE%20Project/) is required to be made, in order to replace the sound properly. Please recreate the image in its folder structure, and naming.
+Go into the Events tab. The following image of Events[^1^][1] is required to be made, in order to replace the sound properly. Please recreate the image in its folder structure, and naming.
 
 ![ExampleImage](img/FootstepsEvents.png)
 
@@ -70,7 +73,7 @@ Open the events that were created previously, a window like this should be open:
 
 On the bottom left, there's an option to "Add >>". Click on it, and click "Browse Object..."
 
-Then search for the Container[^3^](https://gamest23.github.io/PD3WwiseAudioModding/WwiseInfo/WwiseInfo/) that you want to play, whenever this event is triggered.
+Then search for the Container[^3^][3] that you want to play, whenever this event is triggered.
 
 Once you find it, select and press OK.
 
@@ -78,6 +81,6 @@ Go ahead and do this to the other event, unless you have another container to pl
 
 ## Paking
 
-Press "Ctrl S" to save, and open the Unreal Engine Project you downloaded in First Time Setup[^1^](https://gamest23.github.io/PD3WwiseAudioModding/First%20Time%20Setup/UE%20Project/)
+Press "Ctrl S" to save, and open the Unreal Engine Project you downloaded in First Time Setup[^1^][1]
 
 Proceed to "Paking Your Mod" on the left hand side of the page

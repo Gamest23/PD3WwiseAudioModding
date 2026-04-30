@@ -6,6 +6,10 @@ icon: simple/wwise
 
 This page is to help identify and know Containers, icons identification, and more
 
+## Shortcut keys/Hotkeys
+
+Ctrl + S - To save your Project
+
 ## Random and Sequence Containers
 
 ![RandomContainer](img/Random%20Container.png) Random Container
