@@ -6,9 +6,15 @@ icon: simple/wwise
 
 This page is to help identify and know Containers, icons identification, and more
 
-## Shortcut keys/Hotkeys
+These guides use version `2021.1.13.8036`
 
-Ctrl + S - To save your Project
+## Shortcuts/Hotkeys
+
+`Ctrl + S` To save your Project
+
+`Shift + W` Open Music Editor
+
+[Keyboard Shortcuts and Custom Commands](https://www.audiokinetic.com/fr/public-library/2021.1.14_8108/?source=Help&id=keyboard_shortcuts)
 
 ## Random and Sequence Containers
 
