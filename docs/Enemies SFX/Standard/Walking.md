@@ -19,7 +19,7 @@ Now open the Wwise Project. If the Project was already opened, it may prompt to 
 
 ## Event(s)
 
-Go into the Events tab. The following image of Events[^1^][1] is required* to be made, in order to replace the sound properly. You don't have to make every event if you don't want to replace the other SFXs listed. Still, please recreate the image in its folder structure, and naming.
+Go into the Events tab. The following image of Events[^3^][3] is required* to be made, in order to replace the sound properly. You don't have to make every event if you don't want to replace the other SFXs listed. Still, please recreate the image in its folder structure, and naming.
 
 ![ExampleImage](img/FootstepsEvents.png)
 
@@ -34,6 +34,10 @@ Now go into the Audio tab, and find the "Actor-Mixer Hierarchy" section.
 Under the section should be the Work Unit you imported previously. It'll contain the containers that you import your audio (.wav) files into.
 
 Due to how Wwise handles imports, there are 2 settings that need to be applied for the audio to both work and sound good.
+
+We're editing this Container:
+
+![Walkingcontainer](img/WalkingContainer.png)
 
 ## Output Bus
 
