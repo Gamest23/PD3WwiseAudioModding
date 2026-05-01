@@ -28,9 +28,11 @@ A Sequence Container will play a "playlist" of content in an order from top to b
 
 ## Icons
 
+![AudioBus](img/Audio%20Bus.png) [Audio Bus](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=Help&id=the_master_audio_bus_hierarchy)
+
 ![WorkUnit](img/Work%20Unit.png) [Work Unit](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=Help&id=what_are_work_units)
 
-![VirtualFolder](img/Virtual%20Folder.png) Virtual Folder
+![VirtualFolder](img/Virtual%20Folder.png) Virtual Folder (it's self explanatory)
 
 ![RandomContainer](img/Random%20Container.png) [Random Container](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=Help&id=creating_random_container)
 
@@ -42,14 +44,20 @@ A Sequence Container will play a "playlist" of content in an order from top to b
 
 ![SoundVoice](img/Sound%20Voice.png) [Sound Voice](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=Help&id=creating_wwise_objects_on_import)
 
+----
+
 ![MusicSwitchContainer](img/Music%20Switch%20Container.png) [Music Switch Container](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=Help&id=overview_music_switch_container)
 
 ![MusicPlaylistContainer](img/Music%20Playlist%20Container.png) [Music Playlist Container](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=Help&id=overview_music_playlist_container)
 
 ![MusicSegment](img/Music%20Segment.png) [Music Segment](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=Help&id=creating_wwise_objects_on_import)
 
+----
+
+![Event](img/Event.png) [Event](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=WwiseFundamentalApproach&id=understanding_events_understanding_events)
+
+----
+
 ![Switch](img/Switch.png) [Switch](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=Help&id=creating_switch)
 
 ![GameParameter](img/Game%20Parameter.png) [Game Parameter](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=Help&id=creating_game_parameter)
-
-![AudioBus](img/Audio%20Bus.png) [Audio Bus](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=Help&id=the_master_audio_bus_hierarchy)

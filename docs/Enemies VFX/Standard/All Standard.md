@@ -83,6 +83,8 @@ A window will open on import settings, for this you want to import it as a ==Sou
 
 If you want a preview of what to expect, Wwise has controls to play, pause, and stop the currently selected container/audio.
 
+![Player](img/Play%20Controls.png)
+
 If you're not sure what some of the random Containers mean with their name. You can install [this mod](https://modworkshop.net/mod/52340) for Payday 3 that says those Containers in Text To Speech, in-game. It can also be paired with [this mod](https://modworkshop.net/mod/44111), to help get results faster.
 
 Once you're happy with your work, go back to the Events tab.

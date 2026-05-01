@@ -81,6 +81,8 @@ A window will open on import settings, for this you want to import it as a ==Sou
 
 If you want a preview of what to expect, Wwise has controls to play, pause, and stop the currently selected container/audio.
 
+![Player](img/Play%20Controls.png)
+
 Once you're happy with your work, go back to the Events tab.
 
 ## Events, again
