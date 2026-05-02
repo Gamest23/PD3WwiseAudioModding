@@ -81,11 +81,6 @@ nav:
     - Zapper (tazer): Enemies VFX/Specials/Zapper.md
   - FBI Voice Lines:
     - FBI: Enemies VFX/FBI/FBI.md
-  - Enemy Misc.:
-    - Dispatch Pager Speech: Enemy Misc/Dispatch.md
-    - Radio Dispatcher: Enemy Misc/Guard Radio Small Talk.md
-    - First Responder Megaphone: Enemy Misc/Megaphone Guy.md
-    - Smalltalk Police: Enemy Misc/Small-Talk Police.md
 #  - Shade - Core Heists:
 #    - No Rest for the Wicked: Shade/Core Heists/NRFTW.md
 #    - Road Rage:
@@ -114,6 +109,11 @@ nav:
 #    - Combat:
 #    - Social Stealth:
 #    - Crowd Control:
+  - Enemy Misc.:
+    - Dispatch Pager Speech: Enemy Misc/Dispatch.md
+    - Radio Dispatcher: Enemy Misc/Guard Radio Small Talk.md
+    - First Responder Megaphone: Enemy Misc/Megaphone Guy.md
+    - Smalltalk Police: Enemy Misc/Small-Talk Police.md
   - Building Sounds:
     - Alarm(s): Building Sounds/Alarm.md
     - Elevator: Building Sounds/Elevator.md
