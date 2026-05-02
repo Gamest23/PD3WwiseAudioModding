@@ -42,3 +42,5 @@ This is mostly for UI elements and alarms, since we don’t need these rules for
 Remember to do this to both graphs!
 
 Once done, go back to your guide to continue it.
+
+![goback](img/backbutton.png)

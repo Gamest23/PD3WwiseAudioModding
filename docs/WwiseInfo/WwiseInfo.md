@@ -34,11 +34,15 @@ A Sequence Container will play a "playlist" of content in an order from top to b
 
 ![VirtualFolder](img/Virtual%20Folder.png) Virtual Folder (it's self explanatory)
 
+![ActorMixer](img/Actor-Mixer.png) [Actor-Mixer](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=WwiseFundamentalApproach&id=understanding_actor_mixer_hierarchy)
+
 ![RandomContainer](img/Random%20Container.png) [Random Container](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=Help&id=creating_random_container)
 
 ![SequenceContainer](img/Sequence%20Container.png) [Sequence Container](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=Help&id=creating_sequence_container)
 
 ![SwitchContainer](img/Switch%20Container.png) [Switch Container](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=Help&id=overview_switch_container)
+
+![BlendContainer](img/Blender%20Container.png) [Blend Container](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=Help&id=overview_blend_container)
 
 ![SoundSFX](img/Sound%20SFX.png) [Sound SFX](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=Help&id=creating_wwise_objects_on_import)
 
@@ -51,6 +55,8 @@ A Sequence Container will play a "playlist" of content in an order from top to b
 ![MusicPlaylistContainer](img/Music%20Playlist%20Container.png) [Music Playlist Container](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=Help&id=overview_music_playlist_container)
 
 ![MusicSegment](img/Music%20Segment.png) [Music Segment](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=Help&id=creating_wwise_objects_on_import)
+
+![MusicTrack](img/Music%20Track.png) [Music Track](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=Help&id=overview_music_track)
 
 ----
 
