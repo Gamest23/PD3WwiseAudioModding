@@ -1,10 +1,18 @@
 ---
-icon: octicons/megaphone-16
+# icon: material/police-badge
 ---
 
-## :fontawesome-solid-exclamation-circle: Disclaimer
+# THIS NEEDS A REWORK
 
-Warning, currently there is an issue where you are limited on how much "audio time" you get. It is unsure what causes this, and there is currently no fix for this.
+# Guards, Police, & SWAT Voice Lines
+
+Yes, unfortunately on how PD3 was made, you need to replace next to all of the Voice lines that they say. Since Guards occasionally use SWAT lines, Police occasionally use SWAT lines, and SWAT occasionally use Guard lines. It's a mess.
+
+Now keep in mind, you don't have to replace every single voice line they have/offer, take my [Combine Takeover](https://modworkshop.net/mod/51705) mod as an example. Due to the limiting amount of voice lines I had to work with, I didn't actually replace every voice line the SWAT could say.
+
+But at the same time, your planned mod still needs "enough" to properly replace and make your mod sound "natural" and "good". Now to the guide.
+
+----
 
 [1]: https://gamest23.github.io/PD3WwiseAudioModding/First%20Time%20Setup/UE%20Project/
 [3]: https://gamest23.github.io/PD3WwiseAudioModding/WwiseInfo/WwiseInfo/
@@ -13,7 +21,7 @@ Warning, currently there is an issue where you are limited on how much "audio ti
 
 Download this Work Unit:
 
-[Megaphone Cop.wwu](Downloads/Megaphone%20Cop.wwu)
+[Standard Enemy Voice Lines.wwu](Downloads/Standard%20Enemy%20Voice%20Lines.wwu)
 
 Open the project's directory and locate the "Actor-Mixer Hierarchy" folder. You want to place the downloaded Work Unit inside this folder.
 
@@ -25,11 +33,11 @@ Now open the Wwise Project. If the Project was already opened, it may prompt to 
 
 Go into the Events tab. The following image of Events[^3^][3] is required to be made, in order to replace the sound properly. Please recreate the image in its folder structure, and naming.
 
-![ExampleImage](img/Megaphone%20Events.png)
+![ExampleImage](img/Voice%20Line%20Events.png)
 
-`mga_sequence`
+`cops`
 
-`mga_sequence_stop`
+`police`
 
 We'll come back to these events later.
 
@@ -41,7 +49,7 @@ Due to how Wwise handles imports, there are 2 settings that need to be applied f
 
 We're editing this container:
 
-![MegaphoneContainers](img/Megaphone%20Sequence.png)
+![SwitchContainer](img/Root%20Switch%20Container.png)
 
 ## Output Bus
 
@@ -79,6 +87,8 @@ If you want a preview of what to expect, Wwise has controls to play, pause, and 
 
 ![Player](img/Play%20Controls.png)
 
+If you're not sure what some of the random Containers mean with their name. You can install [this mod](https://modworkshop.net/mod/52340) for Payday 3 that says those Containers in Text To Speech, in-game. It can also be paired with [this mod](https://modworkshop.net/mod/44111), to help get results faster.
+
 Once you're happy with your work, go back to the Events tab.
 
 ## Events, again
@@ -89,13 +99,11 @@ Open the events that were created previously, a window like this should be open:
 
 On the bottom left, there's an option to "Add >>". Click on it, and click "Browse Object..."
 
-Then search for the Container[^3^][3] that you want to play, whenever this event is triggered.
+Then search for the Switch Container[^3^][3]
 
 Once you find it, select and press OK.
 
-For the event that's labeled "_stop", it's slightly different. It needs to have the same container you selected for it's similarly named event, and have the type be "Stop" instead of "Play". You can change it in this field.
-
-![Stop](img/Change%20To%20Stop%20-%20Example.png)
+Do this with the other Event.
 
 ## Paking
 

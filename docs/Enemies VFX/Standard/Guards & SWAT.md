@@ -1,6 +1,18 @@
 ---
-icon: material/elevator-passenger-outline
+# icon: material/head
 ---
+
+# THIS NEEDS A REWORK
+
+# Guards, Police, & SWAT Voice Lines
+
+Yes, unfortunately on how PD3 was made, you need to replace next to all of the Voice lines that they say. Since Guards occasionally use SWAT lines, Police occasionally use SWAT lines, and SWAT occasionally use Guard lines. It's a mess.
+
+Now keep in mind, you don't have to replace every single voice line they have/offer, take my [Combine Takeover](https://modworkshop.net/mod/51705) mod as an example. Due to the limiting amount of voice lines I had to work with, I didn't actually replace every voice line the SWAT could say.
+
+But at the same time, your planned mod still needs "enough" to properly replace and make your mod sound "natural" and "good". Now to the guide.
+
+----
 
 [1]: https://gamest23.github.io/PD3WwiseAudioModding/First%20Time%20Setup/UE%20Project/
 [3]: https://gamest23.github.io/PD3WwiseAudioModding/WwiseInfo/WwiseInfo/
@@ -9,7 +21,7 @@ icon: material/elevator-passenger-outline
 
 Download this Work Unit:
 
-[Elevator.wwu](Downloads/Elevator.wwu)
+[Standard Enemy Voice Lines.wwu](Downloads/Standard%20Enemy%20Voice%20Lines.wwu)
 
 Open the project's directory and locate the "Actor-Mixer Hierarchy" folder. You want to place the downloaded Work Unit inside this folder.
 
@@ -19,15 +31,13 @@ Now open the Wwise Project. If the Project was already opened, it may prompt to 
 
 ## Event(s)
 
-Go into the Events tab. The following image of Events[^3^][3] is required* to be made, in order to replace the sound properly. You don't have to make every event if you don't want to replace the other SFXs listed. Still, please recreate the image in its folder structure, and naming.
+Go into the Events tab. The following image of Events[^3^][3] is required to be made, in order to replace the sound properly. Please recreate the image in its folder structure, and naming.
 
-![ExampleImage](img/Elevator%20Events.png)
+![ExampleImage](img/Voice%20Line%20Events.png)
 
-`elevator_ding`
+`cops`
 
-`elevator_door_open_end`
-
-`elevator_door_open_start`
+`police`
 
 We'll come back to these events later.
 
@@ -37,9 +47,9 @@ Under the section should be the Work Unit you imported previously. It'll contain
 
 Due to how Wwise handles imports, there are 2 settings that need to be applied for the audio to both work and sound good.
 
-We're editing these Containers:
+We're editing this container:
 
-![Elevatorcontainer](img/Elevator%20Containers.png)
+![SwitchContainer](img/Root%20Switch%20Container.png)
 
 ## Output Bus
 
@@ -49,11 +59,11 @@ The first field that needs to be changed is the Output Bus
 
 Click on the 3 dots next to it, and navigate to:
 
-Master-Mixer Hierarchy > Default Work Unit > Master Audio Bus > Main > SFX > Environment
+Master-Mixer Hierarchy > Default Work Unit > Master Audio Bus > Main > VO > VO_NPC
 
-![Exampleimage](img/Emitters Output.png)
+![Exampleimage](img/NPC_System%20Bus.png)
 
-Select Emitters and click OK
+Select NPC_System and click OK
 
 ## Global Obstruction
 
@@ -69,13 +79,15 @@ Due to how much this is up to you, this is a separate page entirely that can be 
 
 Importing audio is easy. From file explorer, select the audio you want to use, and drag it onto the respective Container.
 
-A window will open on import settings, for this you want to import it as a ==Sound SFX==. Everything else can be left on its default setting.
+A window will open on import settings, for this you want to import it as a ==Sound Voice==. Everything else can be left on its default setting.
 
 ![ExampleImage](img/ImportExample.gif)
 
 If you want a preview of what to expect, Wwise has controls to play, pause, and stop the currently selected container/audio.
 
 ![Player](img/Play%20Controls.png)
+
+If you're not sure what some of the random Containers mean with their name. You can install [this mod](https://modworkshop.net/mod/52340) for Payday 3 that says those Containers in Text To Speech, in-game. It can also be paired with [this mod](https://modworkshop.net/mod/44111), to help get results faster.
 
 Once you're happy with your work, go back to the Events tab.
 
@@ -87,11 +99,11 @@ Open the events that were created previously, a window like this should be open:
 
 On the bottom left, there's an option to "Add >>". Click on it, and click "Browse Object..."
 
-Then search for the Container[^3^][3] that you want to play, whenever this event is triggered.
+Then search for the Switch Container[^3^][3]
 
 Once you find it, select and press OK.
 
-Go ahead and do this to the other potential events, unless you have another container to play for it.
+Do this with the other Event.
 
 ## Paking
 

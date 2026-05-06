@@ -63,7 +63,12 @@ nav:
     - Rappel: Enemies SFX/Standard/Rappel.md
     - Sliding: Enemies SFX/Standard/Sliding.md
   - Standard Enemies Voice Lines:
-    - All of them: Enemies VFX/Standard/All Standard.md
+    - Guards & SWAT: Enemies VFX/Standard/Guards & SWAT.md
+    - Police: Enemies VFX/Standard/Police.md
+    - Smalltalk Police: Enemies VFX/Standard/Small-Talk Police.md
+    - Dispatch Pager Speech: Enemies VFX/Standard/Dispatch.md
+    - Radio Dispatcher: Enemies VFX/Standard/Guard Radio Small Talk.md
+    - First Responder Megaphone: Enemies VFX/Standard/Megaphone Guy.md
   - Specials SFX:
     - Bulldozer: Enemies SFX/Specials/Bulldozer.md
     - Cloaker: Enemies SFX/Specials/Cloaker.md
@@ -110,24 +115,21 @@ nav:
 #    - Combat:
 #    - Social Stealth:
 #    - Crowd Control:
-  - Enemy Misc.:
-    - Dispatch Pager Speech: Enemy Misc/Dispatch.md
-    - Radio Dispatcher: Enemy Misc/Guard Radio Small Talk.md
-    - First Responder Megaphone: Enemy Misc/Megaphone Guy.md
-    - Smalltalk Police: Enemy Misc/Small-Talk Police.md
   - Building Sounds:
     - Alarm(s): Building Sounds/Alarm.md
     - Elevator: Building Sounds/Elevator.md
+  - Player Interactions:
+    - Player Phone: Player Interactions/Player Phone.md
+    - Elevator Prying: Player Interactions/Elevator Prying.md
+    - Radio Lure: Player Interactions/Radio Lure.md
   - Mod Add-ons:
     - Main Menu Music Jukebox Edition: Mod Add-ons/Main Menu Music Jukebox.md
 #    - Pause Menu Music:
     - Custom Heist Music: Mod Add-ons/Custom Heist Music.md
   - Misc.:
-    - Radio Lure: Misc/Radio Lure.md
-    - Phone Hacking Circle: Misc/Phone Hacking Circle.md
     - Main Menu Music Event: Misc/Main Menu Music Event.md
+    - Phone Hacking Circle: Misc/Phone Hacking Circle.md
     - Overkill Delivery Drone: Misc/Overkill Delivery Drone.md
-    - Player Phone: Misc/Player Phone.md
   - Paking Your Mod:
     - Generate Sound Data: UE Paking/Generate Sound Data.md
     - Folder Sturcture: UE Paking/Folder Structure.md
