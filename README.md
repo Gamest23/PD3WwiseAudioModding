@@ -8,7 +8,7 @@ Audio modding is painful
 
 https://gamest23.github.io/PD3WwiseAudioModding
 
-Plugins Used:
+## Plugins Used:
 
 [mkdocs-open-in-new-tab 1.0.8](https://pypi.org/project/mkdocs-open-in-new-tab/)
 
