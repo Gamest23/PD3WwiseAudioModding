@@ -8,6 +8,8 @@ This page is to help identify and know Containers, icons identification, and mor
 
 These guides use version `2021.1.13.8036`
 
+This is their guide and documentation of the software/engine. [Welcome to Wwise 2021.1.14](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=Help&id=welcome_to_wwise)
+
 ## Shortcuts/Hotkeys
 
 `Ctrl + S` To save your Project
@@ -57,6 +59,8 @@ A Sequence Container will play a "playlist" of content in an order from top to b
 ![MusicSegment](img/Music%20Segment.png) [Music Segment](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=Help&id=creating_wwise_objects_on_import)
 
 ![MusicTrack](img/Music%20Track.png) [Music Track](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=Help&id=overview_music_track)
+
+![Transition](img/transition%20Icon.png) [Transition](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=Help&id=working_with_transitions)
 
 ----
 

@@ -125,7 +125,7 @@ nav:
   - Mod Add-ons:
     - Main Menu Music Jukebox Edition: Mod Add-ons/Main Menu Music Jukebox.md
 #    - Pause Menu Music:
-    - Custom Heist Music: Mod Add-ons/Custom Heist Music.md
+    - Updated Heist Jukebox: Mod Add-ons/Custom Heist Music.md
   - Misc.:
     - Main Menu Music Event: Misc/Main Menu Music Event.md
     - Phone Hacking Circle: Misc/Phone Hacking Circle.md
@@ -134,6 +134,10 @@ nav:
     - Generate Sound Data: UE Paking/Generate Sound Data.md
     - Folder Sturcture: UE Paking/Folder Structure.md
     - Paking:  UE Paking/Paking.md
+  - Paking Your Jukebox Mod:
+    - Making it an Add-on: UE Jukebox Paking/Making it an Add-on.md
+    - Folder Sturcture: UE Jukebox Paking/Folder Structure.md
+    - Paking:  UE Jukebox Paking/Paking.md
 
 # Footer
 extra:

@@ -16,9 +16,9 @@ If you used Sound SFX or Music Containers, you want to copy Events and Media fol
 
 ```Example:```
 
-Half-Life 2 Footsteps > PAYDAY3 > Content > WwiseAudio >Events
+Half-Life 2 Footsteps > PAYDAY3 > Content > WwiseAudio > Events
 
-Half-Life 2 Footsteps > PAYDAY3 > Content > WwiseAudio >Media
+Half-Life 2 Footsteps > PAYDAY3 > Content > WwiseAudio > Media
 
 ----
 
@@ -26,9 +26,9 @@ If you used Sound Voice, you want to copy Events and Localized folders into that
 
 ```Example:```
 
-Half-Life 2 VO > PAYDAY3 > Content > WwiseAudio >Events
+Half-Life 2 VO > PAYDAY3 > Content > WwiseAudio > Events
 
-Half-Life 2 VO > PAYDAY3 > Content > WwiseAudio >Localized
+Half-Life 2 VO > PAYDAY3 > Content > WwiseAudio > Localized
 
 ----
 

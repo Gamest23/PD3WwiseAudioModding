@@ -15,3 +15,5 @@ This guide will roughly take `40 GB` of storage on your C: drive, ensure you hav
 You could install apps/project files like the Unreal Engine, Wwise Project, and PD3UEProject somewhere other than the C: drive. Though errors you may encounter will require some low-level PC knowledge to be fixed.
 
 This process also **requires** admin privilege access on your windows device
+
+Next Page >>
