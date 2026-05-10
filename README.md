@@ -2,7 +2,7 @@ More tutorials/guides can and will be added in the future, if there is more to f
 
 I also have never made a tutorial in this scale before, please say something if there is wrong information in this!
 
-Audio modding is painful
+Audio modding documenting is painful
 
 ## Website:
 
