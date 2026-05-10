@@ -210,4 +210,4 @@ Once you find it, select and press OK.
 
 Press ++ctrl+s++ to save, and open the Unreal Engine Project you downloaded in First Time Setup[^1^][1]
 
-Proceed to "[Paking Your Jukebox Mod](../UE%20Jukebox%20Paking/Making%20it%20an%20Add-on.md)"
+Proceed to "[Paking Your Heist Jukebox Mod](../UE%20Jukebox%20Paking/Making%20it%20an%20Add-on.md)"
