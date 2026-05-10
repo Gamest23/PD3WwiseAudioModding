@@ -59,6 +59,8 @@ If you believe you can do stealth suspense with your music, then add the needed 
 
 If you are using these, then remove the Stealth Music Playlist Container you made.
 
+![ExampleWithSuspense](img/Example%20Music%20Switch%20WithSuspense.png)
+
 Selecting the Music Switch Container you made, you should see a menu like this:
 
 ![EditorView](img/Music%20Switch%20Container%20View.png)
