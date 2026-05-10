@@ -12,9 +12,9 @@ This is their guide and documentation of the software/engine. [Welcome to Wwise 
 
 ## Shortcuts/Hotkeys
 
-`Ctrl + S` To save your Project
+++ctrl+s++ To save your Project
 
-`Shift + W` Open Music Editor
+++left-shift+w++ Open Music Editor
 
 [Keyboard Shortcuts and Custom Commands](https://www.audiokinetic.com/fr/public-library/2021.1.14_8108/?source=Help&id=keyboard_shortcuts)
 

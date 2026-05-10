@@ -26,7 +26,7 @@ Now navigate to:
 
 Saved > Cooked > WindowsNoEditor > PAYDAY3 > Content > Mods > HeistJukebox > Music
 
-Copy the Blueprint name's `.uasset` and `.uexp` to your mod's similar folder,
+Copy the Blueprint name's `.uasset` and `.uexp` to your mod's similar folder
 
 `Example:`
 

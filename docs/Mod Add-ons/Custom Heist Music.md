@@ -63,7 +63,10 @@ If you are using these, then remove the Stealth Music Playlist Container you mad
 
 Selecting the Music Switch Container you made, you should see a menu like this:
 
+If you don't, press ++left-shift+w++
+
 ![EditorView](img/Music%20Switch%20Container%20View.png)
+
 
 Underneath "Add Generic Path", there are two arrows >>
 
@@ -205,6 +208,6 @@ Once you find it, select and press OK.
 
 ## Paking
 
-Press "Ctrl S" to save, and open the Unreal Engine Project you downloaded in First Time Setup[^1^][1]
+Press ++ctrl+s++ to save, and open the Unreal Engine Project you downloaded in First Time Setup[^1^][1]
 
 Proceed to "[Paking Your Jukebox Mod](../UE%20Jukebox%20Paking/Making%20it%20an%20Add-on.md)"

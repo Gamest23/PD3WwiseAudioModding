@@ -46,7 +46,7 @@ Open the new Blueprint by double-clicking on it.
 
 The Name field will be the name that will appear in-game for the Jukebox Mod.
 
-The Audio Event is going to be the Event you made for this. Click on the drop down, and search for the name you gave it.
+The Audio Event is going to be the Event you made for this. Click on the drop down, search for the name you gave it, and click it.
 
 Once you filled out both fields, click `Compile` on the top left.
 
