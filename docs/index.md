@@ -14,19 +14,17 @@ It will also have the advantage of making mods smaller in size with compression 
 
 ## Tools to install
 
-I 100% recommend you add [this tool](https://modworkshop.net/mod/50337) :Icons-mws_logo_white: here to your system as well, as it makes packing your mod significantly easier (this guide also uses it within the steps)
+I 100% recommend you add [this tool](https://modworkshop.net/mod/50337) :Icons-mws_logo_white: here to your system as well, as it makes packing your mod significantly easier (this guide also uses it within the steps).
 
-I use [this tool](https://file-converter.io/?from=readme.md) to easily and locally convert files
+I use [this tool](https://file-converter.io/?from=readme.md) to easily and locally convert files.
 
 ## Things to keep in mind
 
-All audio used for this NEED to be in the .wav format
+All audio used for this is **REQUIRED** to be in the .wav format.
 
-If you find some of the images hard to see, you can Right Click on them and "Open Image in New Tab"
+If you find some of the images hard to see, you can Right Click on them and "Open Image in New Tab" for a higher resolution view.
 
-----
+Table of Contents can be found on the left, and right of each page/guide.
 
-Table of Contents can be found on the left
-
-You can navigate between pages with the arrows on the bottom of the page
-Some guides will instruct you to go to the next page,
+You can navigate between pages with the arrows on the bottom of the page.
+**Some guides will instruct you to go to the next page.**

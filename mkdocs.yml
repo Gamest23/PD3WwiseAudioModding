@@ -5,6 +5,8 @@ site_url: https://gamest23.github.io/PD3WwiseAudioModding/
 theme:
   name: material
   custom_dir: overrides
+  icon: 
+    logo: Icons/logo
   palette:
     # Dark Mode
     - scheme: slate
@@ -28,6 +30,7 @@ theme:
 # Plugins
 plugins:
   - open-in-new-tab
+  - search
 
 # Icon/emoji Support
 markdown_extensions:

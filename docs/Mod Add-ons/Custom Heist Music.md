@@ -57,6 +57,8 @@ If you believe you can do stealth suspense with your music, then add the needed 
 
 - Suspense5
 
+If you are using these, then remove the Stealth Music Playlist Container you made.
+
 Selecting the Music Switch Container you made, you should see a menu like this:
 
 ![EditorView](img/Music%20Switch%20Container%20View.png)
@@ -85,7 +87,7 @@ Click on the three dots for a switch, and navigate to its similarly named Music 
 
 Select the correct one, and click OK.
 
-If you didn't make the Suspense Music Playlist Containers[^3^][3], do the Stealth Music Playlist Container instead[^3^][3].
+If you didn't make the Suspense Music Playlist Containers[^3^][3], use the Stealth Music Playlist Container[^3^][3] for all suspense switches.
 
 ## Output Bus
 
@@ -105,7 +107,7 @@ Select Music and click OK
 
 ## Audio Importing
 
-Importing audio is easy. From file explorer, select the audio you want to use, and drag it onto the respective Container.
+Importing audio is easy. From file explorer, select the (.wav) audio you want to use, and drag it onto the respective Container.
 
 A window will open on import settings. Everything can be left on its default setting, and click "Import".
 
