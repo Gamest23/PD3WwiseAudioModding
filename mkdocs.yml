@@ -143,6 +143,10 @@ nav:
     - Folder Sturcture: UE Jukebox Paking/Folder Structure.md
     - Paking:  UE Jukebox Paking/Paking.md
 
+# Validation rules
+validation:
+  absolute_links: ignore
+
 # Footer
 extra:
   social:

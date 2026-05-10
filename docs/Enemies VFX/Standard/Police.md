@@ -1,16 +1,10 @@
 ---
-# icon: material/police-badge
+icon: material/police-badge
 ---
 
-# THIS NEEDS A REWORK
+# :fontawesome-solid-exclamation-circle: Notice
 
-# Guards, Police, & SWAT Voice Lines
-
-Yes, unfortunately on how PD3 was made, you need to replace next to all of the Voice lines that they say. Since Guards occasionally use SWAT lines, Police occasionally use SWAT lines, and SWAT occasionally use Guard lines. It's a mess.
-
-Now keep in mind, you don't have to replace every single voice line they have/offer, take my [Combine Takeover](https://modworkshop.net/mod/51705) mod as an example. Due to the limiting amount of voice lines I had to work with, I didn't actually replace every voice line the SWAT could say.
-
-But at the same time, your planned mod still needs "enough" to properly replace and make your mod sound "natural" and "good". Now to the guide.
+You can make the police have separate voice line audio, or you could also just link it to Guards & SWAT container if you wish.
 
 ----
 
@@ -21,7 +15,7 @@ But at the same time, your planned mod still needs "enough" to properly replace 
 
 Download this Work Unit:
 
-[Standard Enemy Voice Lines.wwu](Downloads/Standard%20Enemy%20Voice%20Lines.wwu)
+[Police Voice Lines.wwu](Downloads/Police%20Voice%20Lines.wwu)
 
 Open the project's directory and locate the "Actor-Mixer Hierarchy" folder. You want to place the downloaded Work Unit inside this folder.
 
@@ -33,13 +27,11 @@ Now open the Wwise Project. If the Project was already opened, it may prompt to 
 
 Go into the Events tab. The following image of Events[^3^][3] is required to be made, in order to replace the sound properly. Please recreate the image in its folder structure, and naming.
 
-![ExampleImage](img/Voice%20Line%20Events.png)
-
-`cops`
+![ExampleImage](img/Police%20Voice%20Lines%20Event.png)
 
 `police`
 
-We'll come back to these events later.
+We'll come back to this event later.
 
 Now go into the Audio tab, and find the "Actor-Mixer Hierarchy" section. 
 
@@ -73,7 +65,7 @@ Next, go into the RTPC tab in the Container Property Editor
 
 This tab will be responsible how much the audio will lower when it comes to walls, doors, and floors being in the way.
 
-Due to how much this is up to you, this is a separate page entirely that can be [opened here](https://gamest23.github.io/PD3WwiseAudioModding/RTPC/RTPC/).
+Due to how much this is up to you, this is a separate page entirely that can be [opened here](/PD3WwiseAudioModding/RTPC/RTPC/).
 
 ## Audio Importing
 
@@ -102,8 +94,6 @@ On the bottom left, there's an option to "Add >>". Click on it, and click "Brows
 Then search for the Switch Container[^3^][3]
 
 Once you find it, select and press OK.
-
-Do this with the other Event.
 
 ## Paking
 
