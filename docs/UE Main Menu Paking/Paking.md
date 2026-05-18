@@ -48,4 +48,4 @@ Now you can put this .pak file into your ~mods folder in Papaya 3 and test if yo
 
 ![UEFolder](img/UEFolder4.png)
 
-PAYDAY3\Content\Paks\~mods
+PAYDAY3 > Content > Paks > ~mods
