@@ -26,17 +26,17 @@ You can click "Content" to reach this spot
 
 Browse to:
 
-Mods > HeistJukebox > Music
+Mods > MainMenuJukebox > Music
 
-![Music](img/MusicFolder.png)
+![Music](img/MainMenuJukeboxFolder.png)
 
 Right click the empty space, and click `Blueprint Class`
 
 ![blueprint](img/Blueprint%20Class.png)
 
-With the new window that popped up, you want to search at the bottom for `PDA_HeistSoundtrack`
+With the new window that popped up, you want to search at the bottom for `PDA_MainMenuJukebox`
 
-![PDA](img/PDAHeisttrack.png)
+![PDA](img/PDAMainMenu.png)
 
 Click on it, and click Select
 

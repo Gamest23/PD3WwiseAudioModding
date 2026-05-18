@@ -158,25 +158,25 @@ The different sections, do different actions. You can see this when having a Tra
 
 ![Options](img/Sections.png)
 
-## Transition Options
+??? "Transition Options"
 
-### Source
+    ### Source
 
-`Exit Source at:` determines how it should stop the Source audio for the transition. Whether it should end it immediately, next bar, etc.
+    `Exit Source at:` determines how it should stop the Source audio for the transition. Whether it should end it immediately, next bar, etc.
 
-There is also the option for it to fade-out when it stops the Source. **It must be configured for it to function the way you wish.**
+    There is also the option for it to fade-out when it stops the Source. **It must be configured for it to function the way you wish.**
 
-### Transition Segment
+    ### Transition Segment
 
-This is used if you want a specific Music Segment[^3^][3] to play in-between the Source and Destination. With it's own set of properties to change like fade-in and out.
+    This is used if you want a specific Music Segment[^3^][3] to play in-between the Source and Destination. With it's own set of properties to change like fade-in and out.
 
-### Destination
+    ### Destination
 
-`Jump to:` controls what Music Segment[^3^][3] to play inside the Music Playlist Container[^3^][3] in the Destination. **This is Disabled if a Music Segment[^3^][3] is selected for the Destination.**
+    `Jump to:` controls what Music Segment[^3^][3] to play inside the Music Playlist Container[^3^][3] in the Destination. **This is Disabled if a Music Segment[^3^][3] is selected for the Destination.**
 
-`Sync to:` is to control how the start of the Destination Music Segment[^3^][3] should be, compared to the current runtime of the playing Source Music Segment[^3^][3]
+    `Sync to:` is to control how the start of the Destination Music Segment[^3^][3] should be, compared to the current runtime of the playing Source Music Segment[^3^][3]
 
-There is also the option for it to fade-in when it starts the Destination. **It must be configured for it to function the way you wish.**
+    There is also the option for it to fade-in when it starts the Destination. **It must be configured for it to function the way you wish.**
 
 ### Usage
 

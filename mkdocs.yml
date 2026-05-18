@@ -34,6 +34,9 @@ plugins:
 
 # Icon/emoji Support
 markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
   - pymdownx.keys
   - attr_list
   - pymdownx.critic
@@ -142,6 +145,10 @@ nav:
     - Making it an Add-on: UE Jukebox Paking/Making it an Add-on.md
     - Folder Sturcture: UE Jukebox Paking/Folder Structure.md
     - Paking:  UE Jukebox Paking/Paking.md
+  - Paking Your Main Menu Jukebox Mod:
+    - Making it an Add-on: UE Main Menu Paking/Making it an Add-on.md
+    - Folder Sturcture: UE Main Menu Paking/Folder Structure.md
+    - Paking:  UE Main Menu Paking/Paking.md
 
 # Validation rules
 validation:
