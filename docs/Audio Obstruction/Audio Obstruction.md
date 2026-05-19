@@ -2,7 +2,7 @@
 icon: material/volume-vibrate
 ---
 
-# RTPC
+# Audio Obstruction
 
 ## Global Obstruction
 

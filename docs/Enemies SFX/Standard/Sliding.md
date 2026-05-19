@@ -61,7 +61,7 @@ Next, go into the RTPC tab in the Container Property Editor
 
 This tab will be responsible how much the audio will lower when it comes to walls, doors, and floors being in the way.
 
-Due to how much this is up to you, this is a separate page entirely that can be [opened here](/PD3WwiseAudioModding/RTPC/RTPC/).
+Due to how much this is up to you, this is a separate page entirely that can be [opened here](/PD3WwiseAudioModding/Audio Obstruction/Audio Obstruction/).
 
 ## Audio Importing
 

@@ -63,7 +63,7 @@ Next, go into the RTPC tab in the Container Property Editor
 
 This tab will be responsible how much the audio will lower when it comes to walls, doors, and floors being in the way.
 
-Due to how much this is up to you, this is a separate page entirely that can be [opened here](/PD3WwiseAudioModding/RTPC/RTPC/).
+Due to how much this is up to you, this is a separate page entirely that can be [opened here](/PD3WwiseAudioModding/Audio Obstruction/Audio Obstruction/).
 
 ## Audio Importing
 
@@ -91,7 +91,7 @@ Then search for the Container[^3^][3] that you want to play, whenever this event
 
 Once you find it, select and press OK.
 
-Go ahead and do this to the other "_02" event, unless you have another container to play for it.
+Go ahead and do this to the other "_02" event.
 
 For the event that's labeled "_STOP", it's slightly different. It needs to have the same container you selected for both it's similarly named event, and have the type be "Stop" instead of "Play". You can change it in this field.
 

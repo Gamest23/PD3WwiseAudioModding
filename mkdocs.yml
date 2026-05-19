@@ -1,4 +1,4 @@
-site_name: PD3 Wwise Audio Modding
+site_name: Payday 3 Wwise/Event Audio Modding
 site_url: https://gamest23.github.io/PD3WwiseAudioModding/
 
 # Website Theme/Colors
@@ -34,6 +34,8 @@ plugins:
 
 # Icon/emoji Support
 markdown_extensions:
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - admonition
   - pymdownx.details
   - pymdownx.superfences
@@ -63,7 +65,7 @@ nav:
     - UE Project: First Time Setup/UE Project.md
   - Tips: Tips.md
   - Wwise information: WwiseInfo/WwiseInfo.md
-  - RTPC: RTPC/RTPC.md
+  - Audio Obstruction: Audio Obstruction/Audio Obstruction.md
   - Standard Enemies SFX:
     - Walking: Enemies SFX/Standard/Walking.md
     - Guard Lure Interact: Enemies SFX/Standard/Guard Lure Interact.md
@@ -92,8 +94,8 @@ nav:
     - Techie: Enemies VFX/Specials/Techie.md
     - Drones: Enemies VFX/Specials/Drones.md
     - Zapper (tazer): Enemies VFX/Specials/Zapper.md
-  - FBI Voice Lines:
-    - FBI: Enemies VFX/FBI/FBI.md
+  - FBI:
+    - FBI Voice Lines: Enemies VFX/FBI/FBI.md
 #  - Shade - Core Heists:
 #    - No Rest for the Wicked: Shade/Core Heists/NRFTW.md
 #    - Road Rage:
@@ -122,9 +124,10 @@ nav:
 #    - Combat:
 #    - Social Stealth:
 #    - Crowd Control:
-  - Building Sounds:
-    - Alarm(s): Building Sounds/Alarm.md
-    - Elevator: Building Sounds/Elevator.md
+  - Building SFX:
+    - Alarm(s): Building SFX/Alarm.md
+    - Elevator: Building SFX/Elevator.md
+    - Night Club Music: Building SFX/Night Club Music.md
   - Player Interactions:
     - Player Phone: Player Interactions/Player Phone.md
     - Elevator Prying: Player Interactions/Elevator Prying.md

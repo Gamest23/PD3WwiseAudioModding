@@ -73,7 +73,7 @@ You do need to at least make one of the Music Segments[^3^][3] loop indefinitely
 
 ![Loop](img/ChangetheLoop.png)
 
-You can theoretically use Transitions with the Playlist Container[^3^][3] here, but it's least likely you are going to use transitions anyway. If you want to know more about them, open this:
+You can theoretically use Transitions with the Playlist Container[^3^][3] here, but it's least likely you are going to use transitions anyway, UNLESS you have an intro and loop or generally multiple Music Segments used. If you want to know more about them, open this:
 
 ??? Transitions
 

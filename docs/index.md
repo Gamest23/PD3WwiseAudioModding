@@ -2,7 +2,7 @@
 icon: material/home
 ---
 
-# Welcome to the PD3 Wwise Audio Modding Guide!
+# Welcome to the Payday 3 Wwise/Event Audio Modding Guide!
 
 “What are the benefits of replacing audio with Events instead of just using [this](https://modworkshop.net/mod/51045) :Icons-mws_logo_white:?”
 
@@ -28,3 +28,67 @@ Table of Contents can be found on the left, and right of each page/guide.
 
 You can navigate between pages with the arrows on the bottom of the page.
 **Some guides will instruct you to go to the next page.**
+
+----
+
+??? "Current Progress"
+    - [x] First Time Setup
+
+    - [ ] Tips
+
+    - [ ] Wwise Information
+
+    - [x] Audio Obstruction
+
+    - [x] Standard Enemies SFX
+
+    - [ ] Standard Enemies Voice Lines
+        - [x] Guards & SWAT
+        - [x] Police
+        - [ ] Smalltalk Police
+        - [x] Dispatch Pager Speech
+        - [x] Radio Dispatcher
+        - [x] First Responder Megaphone
+
+    - [ ] Specials SFX
+        - [x] Bulldozer
+        - [x] Cloaker
+        - [ ] Nader
+        - [x] Shield
+        - [ ] Sniper
+        - [x] Techie
+        - [x] Zapper
+
+    - [ ] Specials Voice Lines
+        - [x] Bulldozer
+        - [x] Cloaker
+        - [x] Nader
+        - [x] Shield
+        - [x] Techie
+        - [ ] Drones
+        - [x] Zapper
+
+    - [x] FBI
+
+    - [ ] Building SFX
+        - [x] Alarms
+        - [x] Elevator
+        - [ ] Night Club Music
+
+    - [ ] Player Interactions
+        - [ ] Player Phone
+        - [ ] Elevator Prying
+        - [ ] Radio Lure
+
+    - [x] Mod Add-ons
+
+    - [ ] Misc.
+        - [x] Main Menu Music Event
+        - [ ] Phone Hacking Circle
+        - [x] Overkill Delivery Drone
+
+    - [x] Paking Your Mod
+
+    - [x] Paking Your Heist Jukebox Mod
+
+    - [x] Paking Your Main Menu Jukebox Mod
