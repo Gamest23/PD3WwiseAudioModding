@@ -34,7 +34,7 @@ A Sequence Container will play a "playlist" of content in an order from top to b
 
 ![WorkUnit](img/Work%20Unit.png) [Work Unit](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=Help&id=what_are_work_units)
 
-![VirtualFolder](img/Virtual%20Folder.png) Virtual Folder (it's self explanatory)
+![VirtualFolder](img/Virtual%20Folder.png) [Virtual Folder](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=SDK&id=ak_wwise_core_object_create_example_creating_a_virtual_folder.html)
 
 ![ActorMixer](img/Actor-Mixer.png) [Actor-Mixer](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=WwiseFundamentalApproach&id=understanding_actor_mixer_hierarchy)
 
@@ -68,6 +68,16 @@ A Sequence Container will play a "playlist" of content in an order from top to b
 
 ----
 
+![SwitchGroup](img/Switch%20Group.png) [Switch Group](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=SDK&id=wwiseobject_switchgroup.html)
+
 ![Switch](img/Switch.png) [Switch](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=Help&id=creating_switch)
 
 ![GameParameter](img/Game%20Parameter.png) [Game Parameter](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=Help&id=creating_game_parameter)
+
+![StateGroup](img/State%20Group.png) [State Group](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=SDK&id=wwiseobject_stategroup.html)
+
+![State](img/State.png) [State](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=SDK&id=concept_state.html)
+
+----
+
+![Attenuation](img/Attenuation.png) [Attenuation](https://www.audiokinetic.com/en/public-library/2021.1.14_8108/?source=Help&id=applying_distance_based_attenuation)

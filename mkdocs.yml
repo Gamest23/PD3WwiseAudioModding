@@ -21,7 +21,7 @@ theme:
       toggle:
         icon: material/weather-night
         name: Light mode
-      primary: blue
+      primary: green
       accent: deep orange
   features:
      - navigation.footer
