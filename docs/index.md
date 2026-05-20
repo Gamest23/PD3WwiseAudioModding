@@ -4,6 +4,8 @@ icon: material/home
 
 # Welcome to the Payday 3 Wwise/Event Audio Modding Guide!
 
+Returning users from the original google doc, should go through the First Time Setup again. I promise this is the last time, and is required for proper following of the guides.
+
 “What are the benefits of replacing audio with Events instead of just using [this](https://modworkshop.net/mod/51045) :Icons-mws_logo_white:?”
 
 Some of the more “simple” mods can use the PD3AudioModder tool, like replacing some small sound effects in the game. But some audio can have some strict expectations and can play weird/cut off with just simply replacing the audio directly without Wwise Events, or can even be impossible because of the way audio is handled in Papaya 3.
