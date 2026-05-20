@@ -97,4 +97,4 @@ For the event that's labeled "Stop", it's slightly different. It needs to have t
 
 Press ++ctrl+s++ to save, and open the Unreal Engine Project you downloaded in First Time Setup[^1^][1]
 
-Proceed to "[Paking Your Mod](https://gamest23.github.io/PD3WwiseAudioModding/UE%20Paking/Generate%20Sound%20Data/)" on the left hand side of the page
+Proceed to "[Paking Your Mod](/PD3WwiseAudioModding/UE Paking/Generate Sound Data/)" on the left hand side of the page

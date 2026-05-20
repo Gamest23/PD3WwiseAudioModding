@@ -88,6 +88,10 @@ You can navigate between pages with the arrows on the bottom of the page.
         - [ ] Elevator Prying
         - [x] Radio Lure
 
+    - [ ] Player Overkill Weapons
+        - [x] Sociopath
+        - [ ] Potentially more
+
     - [x] Mod Add-ons
 
     - [ ] Misc.
