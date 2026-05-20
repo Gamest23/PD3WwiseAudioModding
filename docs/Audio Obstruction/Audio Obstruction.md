@@ -4,9 +4,11 @@ icon: material/volume-vibrate
 
 # Audio Obstruction
 
+Guide Contributors/thanks: [ZeroZM0](https://modworkshop.net/user/zerozm) :Icons-mws_logo_white:
+
 ## Global Obstruction
 
-We will now set up how audio will behave behind walls/floors. (Major shout out to [ZeroZM0](https://modworkshop.net/user/zerozm) :Icons-mws_logo_white: for this discovery)
+We will now set up how audio will behave behind walls/floors.
 
 ![RTPC](img/RTPC%20Screenie.png)
 
