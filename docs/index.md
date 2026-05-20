@@ -106,8 +106,8 @@ You can navigate between pages with the arrows on the bottom of the page.
     - [x] Paking Your Main Menu Jukebox Mod
 
 ??? "Current Versions"
-    Wwise Project ver `0.8`
+    Wwise Project ver `0.8.5`
 
     Unreal Engine Project ver `1.0`
 
-    Guide ver `0.8`
+    Guide ver `0.8.5`

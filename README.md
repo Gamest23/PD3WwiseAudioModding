@@ -16,9 +16,17 @@ https://gamest23.github.io/PD3WwiseAudioModding
 
 - Requires Python 3.4 or above
 
+- Visual Studio Code recommended for editing
+
 Clone this Repo
 
-Run Command Prompt inside root folder, and run the following:
+Either run Command Prompt inside root folder, and run the following:
+
+`.\venv\Scripts\activate`
+
+`mkdocs serve`
+
+Or open the root folder in Visual Studio Code, and in the terminal section run the following:
 
 `.\venv\Scripts\activate`
 
@@ -26,4 +34,4 @@ Run Command Prompt inside root folder, and run the following:
 
 ----
 
-**THIS PROJECT IS NOT COMPLETE**
+**THIS PROJECT IS STILL A WORK IN PROGRESS**
