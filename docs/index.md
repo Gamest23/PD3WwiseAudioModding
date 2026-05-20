@@ -31,7 +31,7 @@ You can navigate between pages with the arrows on the bottom of the page.
 
 ----
 
-??? "Current Progress"
+??? "Current Progress/Planned"
     - [x] First Time Setup
 
     - [ ] Tips
@@ -70,15 +70,23 @@ You can navigate between pages with the arrows on the bottom of the page.
 
     - [x] FBI
 
+    - [ ] Shade - Core Heists
+    - [ ] Shade - Side Hustles
+    - [ ] Shade - The Bad Apple
+    - [ ] Shade - Smash & Grab
+    - [ ] Shade - Tutorials
+
+    - [ ] Subtitle integration
+
     - [ ] Building SFX
         - [x] Alarms
         - [x] Elevator
         - [ ] Night Club Music
 
     - [ ] Player Interactions
-        - [ ] Player Phone
+        - [x] Player Phone
         - [ ] Elevator Prying
-        - [ ] Radio Lure
+        - [x] Radio Lure
 
     - [x] Mod Add-ons
 
@@ -92,3 +100,10 @@ You can navigate between pages with the arrows on the bottom of the page.
     - [x] Paking Your Heist Jukebox Mod
 
     - [x] Paking Your Main Menu Jukebox Mod
+
+??? "Current Versions"
+    Wwise Project ver `0.8`
+
+    Unreal Engine Project ver `1.0`
+
+    Guide ver `0.8`

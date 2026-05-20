@@ -2,7 +2,7 @@
 # icon: material/music-box-multiple
 ---
 
-# THIS NEEDS MAJOR WORK
+# :fontawesome-solid-exclamation-circle: This Guide is not finished
 
 [1]: https://gamest23.github.io/PD3WwiseAudioModding/First%20Time%20Setup/UE%20Project/
 [3]: https://gamest23.github.io/PD3WwiseAudioModding/WwiseInfo/WwiseInfo/
