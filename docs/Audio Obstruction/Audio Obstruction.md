@@ -26,20 +26,34 @@ It should create a line graph below, clicking on the “Game-Defined Auxiliary S
 
 There are 3 ways of doing this, and will depend on how you want to do it personally. You can change the graph line with the 2 dots on either side, just click and drag them along the Y axis.
 
+----
+
 Completely mute the audio when it’s secluded
 Good for voice lines/footsteps
 
+![](img/MutedGraph.png)
+
 ![muted](img/Muted.png)
+
+----
 
 “Muffle” audio when it’s secluded
 Good for the radio lure
 
+![](img/ReducedGraph.png)
+
 ![muffled](img/Muffled.png)
+
+----
 
 Or just ignore the rules entirely
 This is mostly for UI elements and alarms, since we don’t need these rules for that
 
+![](img/PasstrhoughGraph.png)
+
 ![pass](img/Passthrough.png)
+
+----
 
 Remember to do this to both graphs!
 
