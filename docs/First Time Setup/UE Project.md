@@ -74,11 +74,11 @@ Go back into Integration Settings, and have this field have `WwiseAudio`
 
 ![](img/Wwise%20Sound%20Data%20Folder.png)
 
-And re-enable "Use Event-Based Packaging", there should be a prompt to delete the `Init.bank`, go ahead an do so.
+And re-enable "Use Event-Based Packaging", and click Yes.
 
-Click “Save All”, then “Save Selected”
+![](img/ClickYes.png)
 
-![UEProoj6](img/UEProj6.png)
+There should be a prompt to delete the `Init.bank`, go ahead an do so.
 
 Restart Unreal Engine (close Unreal Engine and re-open the PAYDAY3.uproject file)
 
@@ -86,11 +86,17 @@ Go back into the Project Settings (Edit > Project Settings)
 
 ![](img/Project%20Settings.png)
 
-Go to User Settings under Wwise, scroll to the bottom on the left side. Check if "Auto Connect to WAAPI" was disabled. If it was, re-enable it.
+Go to User Settings under Wwise, scroll to the bottom on the left side.
+
+Check if "Auto Connect to WAAPI" was disabled. If it was, re-enable it.
 
 And enable, “Enable Automatic Asset Synchronization”.
 
 ![](img/Auto%20Asset%20Sync.png)
+
+Click “Save All”, then “Save Selected”
+
+![UEProoj6](img/UEProj6.png)
 
 Do one more restart of the Unreal Engine Project.
 
