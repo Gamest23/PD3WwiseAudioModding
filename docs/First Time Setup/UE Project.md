@@ -54,7 +54,27 @@ Navigate to the Wwise Project you just downloaded and extracted from the previou
 
 And double-click the .wproj file inside.
 
-Close the pop-up(s) as well the Project settings window.
+Close the pop-up(s), ignore the prompt for restart.
+
+Find the option "Use Event-Based Packaging", and untick it. A prompt should open, just click OK.
+
+![](img/EventbasedPackagingOption.png)
+
+![](img/EventbasedPackagingOK.png)
+
+Now go into User Settings
+
+![](img/User%20Settings.png)
+
+And enable "Auto Connect to WAAPI"
+
+![](img/AutoConnect%20to%20WAAPI.png)
+
+Go back into Integration Settings, and have this field have `WwiseAudio`
+
+![](img/Wwise%20Sound%20Data%20Folder.png)
+
+And re-enable "Use Event-Based Packaging", there should be a prompt to delete the `Init.bank`, go ahead an do so.
 
 Click “Save All”, then “Save Selected”
 
@@ -62,6 +82,20 @@ Click “Save All”, then “Save Selected”
 
 Restart Unreal Engine (close Unreal Engine and re-open the PAYDAY3.uproject file)
 
+Go back into the Project Settings (Edit > Project Settings)
+
+![](img/Project%20Settings.png)
+
+Go to User Settings under Wwise, scroll to the bottom on the left side. Check if "Auto Connect to WAAPI" was disabled. If it was, re-enable it.
+
+And enable, “Enable Automatic Asset Synchronization”.
+
+![](img/Auto%20Asset%20Sync.png)
+
+Do one more restart of the Unreal Engine Project.
+
 And you're done! Browse the available guides on the left and get to moddin!
+
+I recommend you have both the Wwise Project, and Unreal Engine Project open at the same time whenever you are following a guide.
 
 There are some tips on the next page for stuff like, making multiple mods on a single Wwise Project and more!
