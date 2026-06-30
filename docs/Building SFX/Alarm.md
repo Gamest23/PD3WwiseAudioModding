@@ -57,6 +57,8 @@ In order of release and event:
 
 **Syntax Error**
 
+**Diamond District (street alarm)**
+
 `DC_alarm_fade_start`
 
 ----
