@@ -2,6 +2,8 @@
 icon: material/home
 ---
 
+# :material-alert: Unreal Engine 5 Update makes this documentation irrelevant, please wait for a port of this in the future :material-alert:
+
 # Welcome to the Payday 3 Wwise/Event Audio Modding Guide!
 
 Returning users from the original google doc, should go through the First Time Setup again. I promise this is the last time, and is required for proper following of the guides.
