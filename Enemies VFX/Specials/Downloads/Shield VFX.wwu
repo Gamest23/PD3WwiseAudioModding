@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7958987A-5866-46DF-8190-9EB3BA591E6E}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Shield VFX" ID="{7958987A-5866-46DF-8190-9EB3BA591E6E}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchContainer Name="Shield Switch Cont" ID="{11F0B1EA-766B-44F8-9D13-1F2EAEBF9E4E}" ShortID="1046434265">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="GameAuxSendVolume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{E33C5B1B-7F71-4ABD-88CB-8EE712F5848E}" ShortID="379197579">
+									<PropertyList>
+										<Property Name="ConeUse" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RadiusMax" Type="Real64" Value="4500"/>
+									</PropertyList>
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{DD4AF2E4-BAA5-4BE2-B49C-36B5C4466E3B}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>4500</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="shield_taking_point" ID="{618DDD1F-987A-49B1-8E40-1A2FBD133486}" WorkUnitID="{014AA3E7-F6F1-4424-8D6A-B5C9E4C0B487}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="NPC_System" ID="{5F5899D2-19BA-43D3-BC14-382E4C8D88FD}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="enemy_comment" ID="{CB77D7F4-C653-4E40-9540-19D312FDAE54}" WorkUnitID="{014AA3E7-F6F1-4424-8D6A-B5C9E4C0B487}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="shield_block_lethal" ID="{C63A5953-3FC8-44A9-A40D-CA4A31A62C3B}" ShortID="774896041">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="shield_block_non_lethal" ID="{5383F7E3-305A-49D1-A878-0D0313B50C67}" ShortID="197875505">
+							<PropertyList>
+								<Property Name="GameAuxSendVolume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="NPC_System" ID="{5F5899D2-19BA-43D3-BC14-382E4C8D88FD}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="shield_comment_stun_mine" ID="{223A5629-87B8-4E2D-8DE9-AB22287A7537}" ShortID="185003594">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="shield_disoriented_stun_mine" ID="{F796EE09-47F9-4926-A5C8-F1E20C9ACC19}" ShortID="300702002">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="shield_frag_grenade" ID="{EFB4E1F7-8D2A-42F7-B4D8-A0612E1756D2}" ShortID="571642379">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="shield_grenade_cover" ID="{C4860CBB-1847-4950-8043-566EEB926444}" ShortID="444528895">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="shield_lost_visor" ID="{CE8F83B6-3399-4B14-830E-C0006E4894EF}" ShortID="307471772">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="shield_protect_ally" ID="{BBBC7447-6196-448D-AD5A-E883BC26E959}" ShortID="830678866">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="death" ID="{20C8E35B-FEDB-4CE1-888A-52BF9AA85540}" ShortID="333505568">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="hurt" ID="{DEA668DA-4123-4C2A-9D52-60394333BE74}" ShortID="11136271">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="shield_shove_attack" ID="{B6C5893F-4F2A-487F-9873-EBCB200D6B90}" ShortID="928625849">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="GameAuxSendVolume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{0B1E6F27-A0DB-496C-AF50-327E383369E0}" ShortID="7991702">
+											<PropertyList>
+												<Property Name="ConeUse" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="RadiusMax" Type="Real64" Value="4500"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{6D8687D3-374E-4DCA-9CBE-4D46E08215DD}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>4500</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="NPC_System" ID="{5F5899D2-19BA-43D3-BC14-382E4C8D88FD}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="shield_taking_point" ID="{0DAD8115-1FB7-4B29-9AAD-2FA46EB92995}" ShortID="656462405">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="GameAuxSendVolume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{9FF9EAE7-F431-49A8-A3ED-52F188088358}" ShortID="677988813">
+											<PropertyList>
+												<Property Name="ConeUse" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="RadiusMax" Type="Real64" Value="4500"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{8256771A-F64B-4EE7-B213-7D97DD4DCF1D}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>4500</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="NPC_System" ID="{5F5899D2-19BA-43D3-BC14-382E4C8D88FD}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<ObjectLists/>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="shield_disoriented_stun_mine" ID="{F796EE09-47F9-4926-A5C8-F1E20C9ACC19}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="shield_taking_point" ID="{0DAD8115-1FB7-4B29-9AAD-2FA46EB92995}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="shield_comment_stun_mine" ID="{223A5629-87B8-4E2D-8DE9-AB22287A7537}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="shield_shove_attack" ID="{B6C5893F-4F2A-487F-9873-EBCB200D6B90}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="shield_protect_ally" ID="{BBBC7447-6196-448D-AD5A-E883BC26E959}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="shield_block_lethal" ID="{C63A5953-3FC8-44A9-A40D-CA4A31A62C3B}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="death" ID="{20C8E35B-FEDB-4CE1-888A-52BF9AA85540}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="shield_lost_visor" ID="{CE8F83B6-3399-4B14-830E-C0006E4894EF}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="shield_grenade_cover" ID="{C4860CBB-1847-4950-8043-566EEB926444}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="hurt" ID="{DEA668DA-4123-4C2A-9D52-60394333BE74}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="shield_block_non_lethal" ID="{5383F7E3-305A-49D1-A878-0D0313B50C67}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="shield_frag_grenade" ID="{EFB4E1F7-8D2A-42F7-B4D8-A0612E1756D2}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="shield_protect_ally" ID="{1D451E0A-BD12-4E34-B447-01C1A9467BA6}"/>
+								<ItemList>
+									<ItemRef Name="shield_protect_ally" ID="{BBBC7447-6196-448D-AD5A-E883BC26E959}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="shield_comment_stun_mine" ID="{F735831F-A387-4BC2-BE3E-42A6E62756EB}"/>
+								<ItemList>
+									<ItemRef Name="shield_comment_stun_mine" ID="{223A5629-87B8-4E2D-8DE9-AB22287A7537}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="shield_taking_point" ID="{618DDD1F-987A-49B1-8E40-1A2FBD133486}"/>
+								<ItemList>
+									<ItemRef Name="shield_taking_point" ID="{0DAD8115-1FB7-4B29-9AAD-2FA46EB92995}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="death" ID="{DC062A28-3854-4955-9993-8D2F6E79CEED}"/>
+								<ItemList>
+									<ItemRef Name="death" ID="{20C8E35B-FEDB-4CE1-888A-52BF9AA85540}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="shield_block_non_lethal" ID="{C63FA23C-B665-4B80-AE90-3AAD2DFABE07}"/>
+								<ItemList>
+									<ItemRef Name="shield_block_non_lethal" ID="{5383F7E3-305A-49D1-A878-0D0313B50C67}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="hurt" ID="{BFF7397F-962A-44BE-BD10-2F08C6DBBC96}"/>
+								<ItemList>
+									<ItemRef Name="hurt" ID="{DEA668DA-4123-4C2A-9D52-60394333BE74}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="shield_shove_attack" ID="{DC04EB94-BF89-4CE4-9620-600185D0A655}"/>
+								<ItemList>
+									<ItemRef Name="shield_shove_attack" ID="{B6C5893F-4F2A-487F-9873-EBCB200D6B90}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="shield_grenade_cover" ID="{851CD1A9-0A45-4D25-A1DD-9C5C4DE6B0B2}"/>
+								<ItemList>
+									<ItemRef Name="shield_grenade_cover" ID="{C4860CBB-1847-4950-8043-566EEB926444}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="shield_disoriented_stun_mine" ID="{0C7D0BB1-7D04-4AA6-9B28-D30733195FAA}"/>
+								<ItemList>
+									<ItemRef Name="shield_disoriented_stun_mine" ID="{F796EE09-47F9-4926-A5C8-F1E20C9ACC19}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="shield_block_lethal" ID="{A0AC20BD-0A5E-4391-98B2-82D27AA8BABD}"/>
+								<ItemList>
+									<ItemRef Name="shield_block_lethal" ID="{C63A5953-3FC8-44A9-A40D-CA4A31A62C3B}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="shield_frag_grenade" ID="{F45CDCC8-6C59-421B-B614-2F318098294A}"/>
+								<ItemList>
+									<ItemRef Name="shield_frag_grenade" ID="{EFB4E1F7-8D2A-42F7-B4D8-A0612E1756D2}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="shield_lost_visor" ID="{C429B5FF-536D-47C7-A8EF-A50171C82333}"/>
+								<ItemList>
+									<ItemRef Name="shield_lost_visor" ID="{CE8F83B6-3399-4B14-830E-C0006E4894EF}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

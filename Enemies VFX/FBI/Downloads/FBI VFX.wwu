@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0EF1AD51-B9E5-4851-B2BD-B84FBEA700E8}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{0EF1AD51-B9E5-4851-B2BD-B84FBEA700E8}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="FBI" ID="{344C2854-6FF9-4C0F-8215-E86E5F9CFB08}" ShortID="414312276">
+					<ChildrenList>
+						<SwitchContainer Name="Switch Container" ID="{8AB6A170-43C8-4E50-A31B-F3B33A6561FC}" ShortID="160431761">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="GameAuxSendHPF" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{E2DD913D-8586-4297-AB65-F4799CD26E78}" ShortID="747879710">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="global_obstruction" ID="{8F2C982A-82BD-487A-9DCD-07CB12E0FA11}" WorkUnitID="{170944DF-3529-4489-B43D-09E751372CA8}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{DB459C72-5FD0-4A8C-A6B5-F058C6124877}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>100</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>100</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="GameAuxSendLPF" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{6DB1A458-3E2C-474F-B5AE-1930C4F5AC4A}" ShortID="910778499">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="global_obstruction" ID="{8F2C982A-82BD-487A-9DCD-07CB12E0FA11}" WorkUnitID="{170944DF-3529-4489-B43D-09E751372CA8}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{85403FD2-0B37-4B99-BFEF-0A3ADC7BDBDF}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>100</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>100</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="GameAuxSendVolume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{8970D8E1-9E4C-43ED-977F-EA88E71B2CD7}" ShortID="125623597">
+											<PropertyList>
+												<Property Name="ConeUse" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="RadiusMax" Type="Real64" Value="6000"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{EDC1A3FE-F212-483D-8750-3F4373AE0008}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>6000</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="fbi_entrance" ID="{773C2ADA-FD80-4C11-A92F-6E45F41B59A8}" WorkUnitID="{014AA3E7-F6F1-4424-8D6A-B5C9E4C0B487}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="NPC_System" ID="{16B19F86-B3F0-438F-90EC-35DE2F203D21}" WorkUnitID="{F31C8965-D750-42B7-87B8-CFD0E7EF0B8A}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="enemy_comment" ID="{CB77D7F4-C653-4E40-9540-19D312FDAE54}" WorkUnitID="{014AA3E7-F6F1-4424-8D6A-B5C9E4C0B487}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="fbi_assault_comment" ID="{1D3ABE0D-01DF-45D0-AA97-0B8AD7D2B177}" ShortID="387912098">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="PCM Auto Detect High" ID="{103058FA-B09E-42AF-A6BA-B711CD85E365}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F31C8965-D750-42B7-87B8-CFD0E7EF0B8A}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="fbi_bulldozer_win" ID="{D2B47389-155D-4167-A48F-EC6CE0DF95A7}" ShortID="716629946">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="PCM Auto Detect High" ID="{103058FA-B09E-42AF-A6BA-B711CD85E365}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F31C8965-D750-42B7-87B8-CFD0E7EF0B8A}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="fbi_choker_win" ID="{449EB37A-4FBA-4466-B4F5-12C6D3F44176}" ShortID="796003374">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="PCM Auto Detect High" ID="{103058FA-B09E-42AF-A6BA-B711CD85E365}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F31C8965-D750-42B7-87B8-CFD0E7EF0B8A}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="fbi_cloaker_win" ID="{B8F20AAA-F7C4-459D-916E-C21EA8A9D18A}" ShortID="200588822">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="PCM Auto Detect High" ID="{103058FA-B09E-42AF-A6BA-B711CD85E365}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F31C8965-D750-42B7-87B8-CFD0E7EF0B8A}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="fbi_custody_another" ID="{FC27D001-23A6-4935-9159-4A713B4A5609}" ShortID="850881828">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="PCM Auto Detect High" ID="{103058FA-B09E-42AF-A6BA-B711CD85E365}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F31C8965-D750-42B7-87B8-CFD0E7EF0B8A}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="fbi_custody_first" ID="{5E9128AF-D911-4C8F-9551-98D8E4617516}" ShortID="617276934">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="PCM Auto Detect High" ID="{103058FA-B09E-42AF-A6BA-B711CD85E365}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F31C8965-D750-42B7-87B8-CFD0E7EF0B8A}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="fbi_entrance" ID="{ED943016-EAB6-4946-89F3-52CCFABBDE87}" ShortID="763221758">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="PCM Auto Detect High" ID="{103058FA-B09E-42AF-A6BA-B711CD85E365}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F31C8965-D750-42B7-87B8-CFD0E7EF0B8A}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="fbi_escape_arrive" ID="{8210005A-86E2-4EDF-9EAA-13F693142AAA}" ShortID="390831659">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="PCM Auto Detect High" ID="{103058FA-B09E-42AF-A6BA-B711CD85E365}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F31C8965-D750-42B7-87B8-CFD0E7EF0B8A}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="fbi_escape_end" ID="{7FA27657-787F-4E81-994C-5ED7EA75AB49}" ShortID="553320885">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="PCM Auto Detect High" ID="{103058FA-B09E-42AF-A6BA-B711CD85E365}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F31C8965-D750-42B7-87B8-CFD0E7EF0B8A}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="fbi_escape_ongoing" ID="{3E7A9940-C500-41D5-947A-CEF704F4AD76}" ShortID="889393692">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="PCM Auto Detect High" ID="{103058FA-B09E-42AF-A6BA-B711CD85E365}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F31C8965-D750-42B7-87B8-CFD0E7EF0B8A}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="fbi_grenadier_win" ID="{13812830-5E26-4D1E-95C4-975258228219}" ShortID="845960295">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="PCM Auto Detect High" ID="{103058FA-B09E-42AF-A6BA-B711CD85E365}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F31C8965-D750-42B7-87B8-CFD0E7EF0B8A}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="fbi_satellite_destroyed" ID="{7B0FCD7F-95D6-412E-8BFE-6201DC317FD5}" ShortID="369843165">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="PCM Auto Detect High" ID="{103058FA-B09E-42AF-A6BA-B711CD85E365}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F31C8965-D750-42B7-87B8-CFD0E7EF0B8A}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="fbi_shield_win" ID="{A3DD26D4-DB6E-4057-8589-7D14CC7921DE}" ShortID="975240111">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="PCM Auto Detect High" ID="{103058FA-B09E-42AF-A6BA-B711CD85E365}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F31C8965-D750-42B7-87B8-CFD0E7EF0B8A}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="fbi_sniper_win" ID="{F56E02A1-501B-492C-BBC8-0E2AF5FB3950}" ShortID="277149348">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="PCM Auto Detect High" ID="{103058FA-B09E-42AF-A6BA-B711CD85E365}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F31C8965-D750-42B7-87B8-CFD0E7EF0B8A}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="fbi_taser_win" ID="{5F6A3E16-5E9F-4F1A-B927-0C72E256200E}" ShortID="861076709">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="PCM Auto Detect High" ID="{103058FA-B09E-42AF-A6BA-B711CD85E365}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F31C8965-D750-42B7-87B8-CFD0E7EF0B8A}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="fbi_techie_win" ID="{0767EF66-5CDC-4427-9FE6-6FDD7B89B606}" ShortID="241698265">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="PCM Auto Detect High" ID="{103058FA-B09E-42AF-A6BA-B711CD85E365}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F31C8965-D750-42B7-87B8-CFD0E7EF0B8A}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<ObjectLists/>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="fbi_custody_another" ID="{FC27D001-23A6-4935-9159-4A713B4A5609}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="fbi_assault_comment" ID="{1D3ABE0D-01DF-45D0-AA97-0B8AD7D2B177}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="fbi_entrance" ID="{ED943016-EAB6-4946-89F3-52CCFABBDE87}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="fbi_taser_win" ID="{5F6A3E16-5E9F-4F1A-B927-0C72E256200E}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="fbi_grenadier_win" ID="{13812830-5E26-4D1E-95C4-975258228219}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="fbi_escape_ongoing" ID="{3E7A9940-C500-41D5-947A-CEF704F4AD76}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="fbi_escape_end" ID="{7FA27657-787F-4E81-994C-5ED7EA75AB49}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="fbi_escape_arrive" ID="{8210005A-86E2-4EDF-9EAA-13F693142AAA}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="fbi_techie_win" ID="{0767EF66-5CDC-4427-9FE6-6FDD7B89B606}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="fbi_choker_win" ID="{449EB37A-4FBA-4466-B4F5-12C6D3F44176}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="fbi_satellite_destroyed" ID="{7B0FCD7F-95D6-412E-8BFE-6201DC317FD5}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="fbi_bulldozer_win" ID="{D2B47389-155D-4167-A48F-EC6CE0DF95A7}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="fbi_sniper_win" ID="{F56E02A1-501B-492C-BBC8-0E2AF5FB3950}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="fbi_cloaker_win" ID="{B8F20AAA-F7C4-459D-916E-C21EA8A9D18A}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="fbi_custody_first" ID="{5E9128AF-D911-4C8F-9551-98D8E4617516}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="fbi_shield_win" ID="{A3DD26D4-DB6E-4057-8589-7D14CC7921DE}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="fbi_grenadier_win" ID="{5E523700-E2F3-4D9B-A340-63BAA9839586}"/>
+										<ItemList>
+											<ItemRef Name="fbi_grenadier_win" ID="{13812830-5E26-4D1E-95C4-975258228219}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="fbi_bulldozer_win" ID="{A2262A3A-440B-4784-B8E2-F2BD326B319A}"/>
+										<ItemList>
+											<ItemRef Name="fbi_bulldozer_win" ID="{D2B47389-155D-4167-A48F-EC6CE0DF95A7}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="fbi_custody_first" ID="{868B543E-14BD-48BF-979D-AB696B0347B1}"/>
+										<ItemList>
+											<ItemRef Name="fbi_custody_first" ID="{5E9128AF-D911-4C8F-9551-98D8E4617516}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="fbi_escape_end" ID="{DCBB1141-A583-4FEC-B260-9D96DB198016}"/>
+										<ItemList>
+											<ItemRef Name="fbi_escape_end" ID="{7FA27657-787F-4E81-994C-5ED7EA75AB49}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="fbi_sniper_win" ID="{A41C947E-AAF7-4DB3-8D41-360A317EDD6A}"/>
+										<ItemList>
+											<ItemRef Name="fbi_sniper_win" ID="{F56E02A1-501B-492C-BBC8-0E2AF5FB3950}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="fbi_assault_comment" ID="{C7682B8D-A254-409F-AFA4-085A98D045A7}"/>
+										<ItemList>
+											<ItemRef Name="fbi_assault_comment" ID="{1D3ABE0D-01DF-45D0-AA97-0B8AD7D2B177}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="fbi_satellite_destroyed" ID="{DBED2EAD-0E43-4EB1-93D2-90072AC2FB87}"/>
+										<ItemList>
+											<ItemRef Name="fbi_satellite_destroyed" ID="{7B0FCD7F-95D6-412E-8BFE-6201DC317FD5}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="fbi_techie_win" ID="{080AB3AF-9764-4847-9293-AB1D89D9CC75}"/>
+										<ItemList>
+											<ItemRef Name="fbi_techie_win" ID="{0767EF66-5CDC-4427-9FE6-6FDD7B89B606}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="fbi_escape_arrive" ID="{A7F520D2-42CF-4883-96BB-2D0EFBD61AFA}"/>
+										<ItemList>
+											<ItemRef Name="fbi_escape_arrive" ID="{8210005A-86E2-4EDF-9EAA-13F693142AAA}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="fbi_escape_ongoing" ID="{F095E3D5-15F3-4D67-81A0-24027E68772E}"/>
+										<ItemList>
+											<ItemRef Name="fbi_escape_ongoing" ID="{3E7A9940-C500-41D5-947A-CEF704F4AD76}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="fbi_custody_another" ID="{0AABC6D6-10EF-421A-A95F-098EB52997F0}"/>
+										<ItemList>
+											<ItemRef Name="fbi_custody_another" ID="{FC27D001-23A6-4935-9159-4A713B4A5609}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="fbi_entrance" ID="{773C2ADA-FD80-4C11-A92F-6E45F41B59A8}"/>
+										<ItemList>
+											<ItemRef Name="fbi_entrance" ID="{ED943016-EAB6-4946-89F3-52CCFABBDE87}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="fbi_shield_win" ID="{B88F02E0-6A52-4EC3-B871-482E78508475}"/>
+										<ItemList>
+											<ItemRef Name="fbi_shield_win" ID="{A3DD26D4-DB6E-4057-8589-7D14CC7921DE}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="fbi_choker_win" ID="{8AD98AEA-D908-4B7D-AED7-D9848555B7AB}"/>
+										<ItemList>
+											<ItemRef Name="fbi_choker_win" ID="{449EB37A-4FBA-4466-B4F5-12C6D3F44176}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="fbi_taser_win" ID="{220B15F4-E015-4950-9870-7AA8DD90015B}"/>
+										<ItemList>
+											<ItemRef Name="fbi_taser_win" ID="{5F6A3E16-5E9F-4F1A-B927-0C72E256200E}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="fbi_cloaker_win" ID="{7E1FBCFC-49CC-4703-A25A-C669B0CC8267}"/>
+										<ItemList>
+											<ItemRef Name="fbi_cloaker_win" ID="{B8F20AAA-F7C4-459D-916E-C21EA8A9D18A}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
