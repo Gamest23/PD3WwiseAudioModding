@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0AD51BCB-7F88-43B6-A5DD-192BA08693C4}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Sociopath" ID="{0AD51BCB-7F88-43B6-A5DD-192BA08693C4}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Sociopath Mixer" ID="{12C46858-FC35-4768-B6CE-34D35C95375C}" ShortID="394735914">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="Your Music Name" ID="{D7BEB44A-9938-4F76-B9D4-85C51DCBE1C1}" ShortID="787758184">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="third" ID="{D418B0E1-9F9A-4E05-95BF-A3E04B3E0A48}" WorkUnitID="{014AA3E7-F6F1-4424-8D6A-B5C9E4C0B487}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="pov" ID="{C692560E-160C-4F00-8ADE-DE3E5ED68137}" WorkUnitID="{014AA3E7-F6F1-4424-8D6A-B5C9E4C0B487}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Sociopath FP" ID="{5DE7A571-B2E4-48C7-A07B-DE705C0B9DE3}" ShortID="746420088">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="2"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+											<ObjectRef Name="Sociopath_Effect" ID="{AF658212-9258-4DD3-A515-D936BE76C3CC}" WorkUnitID="{B948FB2F-F18E-45BB-8FF4-24C9D0B129D2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Player_System" ID="{31F7CDB9-BE75-470D-A855-25824835F599}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Sociopath TP" ID="{0B230BF1-455C-4AE9-9AB2-2B9B002A7934}" ShortID="542518765">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="2"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Bat" ID="{53BA787B-C403-43F0-A60B-24D29BA4FB42}" WorkUnitID="{633EFDDB-EDAE-411E-854E-8308F2B0BD97}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Emitters" ID="{D3848031-0D2F-43D4-87A8-F6EEA2AF037F}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<ObjectLists/>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Sociopath FP" ID="{5DE7A571-B2E4-48C7-A07B-DE705C0B9DE3}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Sociopath TP" ID="{0B230BF1-455C-4AE9-9AB2-2B9B002A7934}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="first" ID="{9512D21B-1892-45EE-A067-C987C6D32FC5}"/>
+										<ItemList>
+											<ItemRef Name="Sociopath FP" ID="{5DE7A571-B2E4-48C7-A07B-DE705C0B9DE3}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="third" ID="{D418B0E1-9F9A-4E05-95BF-A3E04B3E0A48}"/>
+										<ItemList>
+											<ItemRef Name="Sociopath TP" ID="{0B230BF1-455C-4AE9-9AB2-2B9B002A7934}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

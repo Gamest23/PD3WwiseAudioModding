@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1C3ABFB2-22A8-4C32-AD7D-A4A6F31D7F9C}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Cloaker VFX" ID="{1C3ABFB2-22A8-4C32-AD7D-A4A6F31D7F9C}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchContainer Name="Cloaker Switch Cont" ID="{A474F7A8-8471-414A-984C-B8293DFEE074}" ShortID="1008693096">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="GameAuxSendVolume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{BEB955F3-CE7C-4991-8EB2-59072BF3EDDA}" ShortID="574173986">
+									<PropertyList>
+										<Property Name="ConeUse" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RadiusMax" Type="Real64" Value="4500"/>
+									</PropertyList>
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{9AB66439-19CD-4321-AF78-91EFF8E54699}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>4500</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="cloaker_barks_sneaking" ID="{B7C8D47E-7F31-4BCD-BFC1-01DCC8083C04}" WorkUnitID="{014AA3E7-F6F1-4424-8D6A-B5C9E4C0B487}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="NPC_System" ID="{5F5899D2-19BA-43D3-BC14-382E4C8D88FD}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="enemy_comment" ID="{CB77D7F4-C653-4E40-9540-19D312FDAE54}" WorkUnitID="{014AA3E7-F6F1-4424-8D6A-B5C9E4C0B487}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="cloaker_barks_sneaking" ID="{24978987-F949-48E9-B94C-6B47BACAAF04}" ShortID="17878873">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="cloaker_cuff_player" ID="{F55CB187-789F-46D7-8FCF-9BB9ED5051A5}" ShortID="523862112">
+							<PropertyList>
+								<Property Name="GameAuxSendVolume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="NPC_System" ID="{5F5899D2-19BA-43D3-BC14-382E4C8D88FD}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="cloaker_flashbanged" ID="{A0B33B9F-2612-46C9-9F7C-0182154B6EF3}" ShortID="833637708">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="cloaker_flashbanged_by_grenadier" ID="{16EF7354-96E7-4067-96AE-9A190F058EAC}" ShortID="783516392">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="cloaker_sabotage_ammo_bag" ID="{E6FC7D64-AA1D-4DC4-914E-AC750063EC4B}" ShortID="1031215241">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="cloaker_sabotage_armor_bag" ID="{B0556F5C-D247-44A8-808B-BA73B7A7EEAF}" ShortID="987189241">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="cloaker_sabotage_doctor_bag" ID="{5D284BAB-B88E-495E-AD5D-301CA9842839}" ShortID="375014172">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="cloaker_sabotage_generic_deployable" ID="{4B218D24-05C0-4CF5-AF8A-E4811D6AFB31}" ShortID="548268359">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="death" ID="{F60040FC-8CCA-4881-B134-69D8CB4FE9CC}" ShortID="894232598">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="hurt" ID="{3D3CBA0C-A724-4AC4-9D73-96F51208C803}" ShortID="12316078">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="cloaker_taunt_after_assault" ID="{C76BB61B-CBE9-4DE3-A5B5-194424D520B6}" ShortID="569548481">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="GameAuxSendVolume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{BA709829-7EF0-4EBD-A8D8-1BE5351CFAF1}" ShortID="977540759">
+											<PropertyList>
+												<Property Name="ConeUse" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="RadiusMax" Type="Real64" Value="4500"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{0F2F3954-26AD-4EEA-B23D-0E0D404A7E30}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>4500</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="NPC_System" ID="{5F5899D2-19BA-43D3-BC14-382E4C8D88FD}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="cloaker_taunt_during_assault" ID="{A50E65F4-EFCC-4388-98C6-E60519F7CEAD}" ShortID="219221913">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="GameAuxSendVolume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{FC09723F-8BE7-4801-913B-A29420EDA882}" ShortID="846779066">
+											<PropertyList>
+												<Property Name="ConeUse" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="RadiusMax" Type="Real64" Value="4500"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{306CF927-325C-443D-99A4-E750F7499B4D}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>4500</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="NPC_System" ID="{5F5899D2-19BA-43D3-BC14-382E4C8D88FD}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<ObjectLists/>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="hurt" ID="{3D3CBA0C-A724-4AC4-9D73-96F51208C803}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="cloaker_taunt_after_assault" ID="{C76BB61B-CBE9-4DE3-A5B5-194424D520B6}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="cloaker_sabotage_generic_deployable" ID="{4B218D24-05C0-4CF5-AF8A-E4811D6AFB31}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="cloaker_flashbanged_by_grenadier" ID="{16EF7354-96E7-4067-96AE-9A190F058EAC}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="cloaker_sabotage_armor_bag" ID="{B0556F5C-D247-44A8-808B-BA73B7A7EEAF}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="cloaker_sabotage_ammo_bag" ID="{E6FC7D64-AA1D-4DC4-914E-AC750063EC4B}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="cloaker_barks_sneaking" ID="{24978987-F949-48E9-B94C-6B47BACAAF04}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="cloaker_cuff_player" ID="{F55CB187-789F-46D7-8FCF-9BB9ED5051A5}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="cloaker_flashbanged" ID="{A0B33B9F-2612-46C9-9F7C-0182154B6EF3}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="cloaker_sabotage_doctor_bag" ID="{5D284BAB-B88E-495E-AD5D-301CA9842839}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="cloaker_taunt_during_assault" ID="{A50E65F4-EFCC-4388-98C6-E60519F7CEAD}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="death" ID="{F60040FC-8CCA-4881-B134-69D8CB4FE9CC}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="cloaker_sabotage_generic_deployable" ID="{0D071D04-C148-4E89-924F-89458B7CE7FB}"/>
+								<ItemList>
+									<ItemRef Name="cloaker_sabotage_generic_deployable" ID="{4B218D24-05C0-4CF5-AF8A-E4811D6AFB31}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="death" ID="{DC062A28-3854-4955-9993-8D2F6E79CEED}"/>
+								<ItemList>
+									<ItemRef Name="death" ID="{F60040FC-8CCA-4881-B134-69D8CB4FE9CC}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="cloaker_cuff_player" ID="{C646B562-26E7-4E5A-BBE0-5EC46FBFA0E8}"/>
+								<ItemList>
+									<ItemRef Name="cloaker_cuff_player" ID="{F55CB187-789F-46D7-8FCF-9BB9ED5051A5}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="cloaker_taunt_during_assault" ID="{53D82071-A34C-4844-B5B0-973B06452191}"/>
+								<ItemList>
+									<ItemRef Name="cloaker_taunt_during_assault" ID="{A50E65F4-EFCC-4388-98C6-E60519F7CEAD}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="cloaker_barks_sneaking" ID="{B7C8D47E-7F31-4BCD-BFC1-01DCC8083C04}"/>
+								<ItemList>
+									<ItemRef Name="cloaker_barks_sneaking" ID="{24978987-F949-48E9-B94C-6B47BACAAF04}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="hurt" ID="{BFF7397F-962A-44BE-BD10-2F08C6DBBC96}"/>
+								<ItemList>
+									<ItemRef Name="hurt" ID="{3D3CBA0C-A724-4AC4-9D73-96F51208C803}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="cloaker_sabotage_armor_bag" ID="{DEBB4F90-5399-4D30-A6A7-AF94715F2570}"/>
+								<ItemList>
+									<ItemRef Name="cloaker_sabotage_armor_bag" ID="{B0556F5C-D247-44A8-808B-BA73B7A7EEAF}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="cloaker_flashbanged" ID="{6422219D-2083-4CE5-A245-4CEF9C3BBED4}"/>
+								<ItemList>
+									<ItemRef Name="cloaker_flashbanged" ID="{A0B33B9F-2612-46C9-9F7C-0182154B6EF3}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="cloaker_taunt_after_assault" ID="{E40019AB-E2E8-43F5-B64B-9AB0FFC2EFA7}"/>
+								<ItemList>
+									<ItemRef Name="cloaker_taunt_after_assault" ID="{C76BB61B-CBE9-4DE3-A5B5-194424D520B6}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="cloaker_flashbanged_by_grenadier" ID="{AE400AC0-3A65-468F-A8DF-9A3A70B4E12A}"/>
+								<ItemList>
+									<ItemRef Name="cloaker_flashbanged_by_grenadier" ID="{16EF7354-96E7-4067-96AE-9A190F058EAC}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="cloaker_sabotage_doctor_bag" ID="{2BEFD2DA-E104-4669-A205-579B96270EE2}"/>
+								<ItemList>
+									<ItemRef Name="cloaker_sabotage_doctor_bag" ID="{5D284BAB-B88E-495E-AD5D-301CA9842839}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="cloaker_sabotage_ammo_bag" ID="{11E0E9E1-5872-4A10-94C1-C6E91DC2D727}"/>
+								<ItemList>
+									<ItemRef Name="cloaker_sabotage_ammo_bag" ID="{E6FC7D64-AA1D-4DC4-914E-AC750063EC4B}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
