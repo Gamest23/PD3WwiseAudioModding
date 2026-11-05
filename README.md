@@ -6,7 +6,7 @@ Audio modding documenting is painful
 
 ## Website:
 
-https://gamest23.github.io/PD3WwiseAudioModding
+https://gamest23.github.io/PD3WwiseAudioModdingZensical
 
 ## External Plugins Used:
 
