@@ -8,9 +8,9 @@ Audio modding documenting is painful
 
 https://gamest23.github.io/PD3WwiseAudioModding
 
-## External Plugins Used:
+## ~~External Plugins Used:~~
 
-[mkdocs-open-in-new-tab 1.0.8](https://pypi.org/project/mkdocs-open-in-new-tab/)
+~~[mkdocs-open-in-new-tab 1.0.8](https://pypi.org/project/mkdocs-open-in-new-tab/)~~
 
 ## To run locally:
 
@@ -26,17 +26,21 @@ Clone this Repo
 
 Installing/Updating
 
-`pip install mkdocs-material` or `'venv/bin/pip' install mkdocs-material`
+`python -m venv .venv` or `python3 -m venv .venv`
 
-`pip install mkdocs-open-in-new-tab` or `'venv/bin/pip' install mkdocs-open-in-new-tab`
+`.venv\Scripts\activate` or `source .venv/bin/activate.fish` to activate the virtual environment
 
-Running environment
+`pip install zensical`
 
-`python -m venv venv` only do this once
+`zensical serve` to begin running the website locally (127.0.0.1:8000)
+
+Re-run Website locally:
+
+`python -m venv venv` or `python3 -m venv .venv`
 
 `.\venv\Scripts\activate` or `source venv/bin/activate.fish` to activate the virtual environment
 
-`mkdocs serve` to begin running the website locally (127.0.0.1:8000)
+`zensical serve` to begin running the website locally (127.0.0.1:8000)
 
 ----
 
