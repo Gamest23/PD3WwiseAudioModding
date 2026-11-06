@@ -1,5 +1,5 @@
 [project]
-site_url = "https://gamest23.github.io/PD3WwiseAudioModding/"
+site_url = "https://gamest23.github.io/PD3WwiseAudioModding"
 site_name = "Payday 3 Wwise/Event Audio Modding"
 # site_description = "Your project description"
 site_author = "Gamest23"
@@ -7,7 +7,7 @@ site_author = "Gamest23"
 copyright = "Copyright &copy; 2026 Gamest23"
 
 repo_url = "https://github.com/Gamest23/PD3WwiseAudioModding"
-repo_name = "Gamest23/PD3WwiseAudioModdingZensical"
+repo_name = "Gamest23/PD3WwiseAudioModding"
 # edit_uri = "edit/main/docs/"
 
 nav = [
