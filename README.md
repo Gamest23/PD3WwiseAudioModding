@@ -24,7 +24,7 @@ Clone this Repo
 
 ### Run Command Prompt inside root folder, and run the following:
 
-Installing
+#### Installing
 
 `python -m venv .venv` or `python3 -m venv .venv`
 
@@ -34,7 +34,7 @@ Installing
 
 `zensical serve` to begin running the website locally (127.0.0.1:8000)
 
-Updating:
+#### Updating:
 
 [Versioning](https://zensical.org/docs/upgrade/#versioning)
 
@@ -42,7 +42,7 @@ Updating:
 
 `pip install --upgrade --force-reinstall zensical`
 
-Re-run Website locally:
+#### Re-run Website locally:
 
 `python -m venv venv` or `python3 -m venv .venv`
 
