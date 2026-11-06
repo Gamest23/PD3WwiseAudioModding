@@ -1,0 +1,10 @@
+/* Hide icons for light and dark mode */
+[data-md-color-scheme="default"] .dark {
+    display: none;
+}
+[data-md-color-scheme="slate"] .light {
+    display: none;
+}
+.md-typeset svg {
+    color: var(--colorChange);
+}

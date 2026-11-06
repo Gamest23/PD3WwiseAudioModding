@@ -1,0 +1,83 @@
+MWS Logo/Icon:
+
+<span class="dark">:Icons-mws_logo_white:</span><span class="light">:Icons-mws_logo_black:</span>
+
+:Icons-mws_logo:
+
+
+
+Payday 3 Icon:
+
+:Icons-logo:
+
+
+
+Wwise Icons:
+
+:Wwise-actormixer:
+:Wwise-attenuation:
+:Wwise-audiobus:
+:Wwise-blendercontainer:
+:Wwise-event:
+:Wwise-folder:
+:Wwise-gameparameter:
+:Wwise-musicplaylist:
+:Wwise-musicsegment:
+:Wwise-musictrack:
+:Wwise-randomcontainer:
+:Wwise-sequencecontainer:
+:Wwise-soundsfx:
+:Wwise-soundvoice:
+:Wwise-state:
+:Wwise-switchcontainer:
+:Wwise-switchgroup:
+:Wwise-transition:
+:Wwise-workunit:
+
+Wwise Nav Icons:
+
+:Wwise-nav-actormixer:
+:Wwise-nav-attenuation:
+:Wwise-nav-audiobus:
+:Wwise-nav-blendercontainer:
+:Wwise-nav-event:
+:Wwise-nav-folder:
+:Wwise-nav-gameparameter:
+:Wwise-nav-musicplaylist:
+:Wwise-nav-musicsegment:
+:Wwise-nav-musictrack:
+:Wwise-nav-randomcontainer:
+:Wwise-nav-sequencecontainer:
+:Wwise-nav-soundsfx:
+:Wwise-nav-soundvoice:
+:Wwise-nav-state:
+:Wwise-nav-switchcontainer:
+:Wwise-nav-switchgroup:
+:Wwise-nav-transition:
+:Wwise-nav-workunit:
+
+
+
+Fmodel:
+
+:Fmodel-fmodel:
+:Fmodel-fmodelmono:
+:Fmodel-fmodelcolor:
+
+
+
+General Icons, Emojis:
+
+https://zensical.org/docs/authoring/icons-emojis/
+
+(MKdocs) https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/
+
+
+
+Keyboard keys:
+
+https://zensical.org/docs/authoring/icons-emojis/
+
+(MKdocs) https://squidfunk.github.io/mkdocs-material/reference/formatting/#adding-keyboard-keys
+
+https://facelessuser.github.io/pymdown-extensions/extensions/keys/#extendingmodifying-key-map-index

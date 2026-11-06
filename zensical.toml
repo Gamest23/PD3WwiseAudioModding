@@ -1,26 +1,129 @@
 [project]
-site_url = "https://gamest23.github.io/PD3WwiseAudioModdingZensical/"
+site_url = "https://gamest23.github.io/PD3WwiseAudioModding/"
 site_name = "Payday 3 Wwise/Event Audio Modding"
 # site_description = "Your project description"
-# site_author = "Your name"
+site_author = "Gamest23"
 
-# copyright = "Copyright &copy; 2026 Your name"
+copyright = "Copyright &copy; 2026 Gamest23"
 
-# repo_url = "https://github.com/user/repo"
-# repo_name = "user/repo"
+repo_url = "https://github.com/Gamest23/PD3WwiseAudioModdingZensical"
+repo_name = "Gamest23/PD3WwiseAudioModdingZensical"
 # edit_uri = "edit/main/docs/"
 
 nav = [
-  { "Get started" = "index.md" },
-  { "Markdown in 5min" = "markdown.md" },
+  {"Home" = "index.md"},
+  {"First Time Setup" = [
+    {"Windows" = [
+      {"Windows" = "First Time Setup/First Time Setup Windows/Windows.md"},
+      {"Visual Studio" = "First Time Setup/First Time Setup Windows/Visual Studio.md"},
+      {"Unreal Engine" = "First Time Setup/First Time Setup Windows/Unreal Engine.md"},
+      {"Wwise" = "First Time Setup/First Time Setup Windows/Wwise.md"},
+      {"Post Restart" = "First Time Setup/First Time Setup Windows/Post Restart.md"},
+      {"Unreal Project" = "First Time Setup/First Time Setup Windows/UE Project.md"},
+    ]},
+    {"Linux" = [
+      {"Linux" = "First Time Setup/First Time Setup Linux/Linux.md"},
+      {"VMware Setup" = "First Time Setup/First Time Setup Linux/VMware Setup.md"},
+      {"Windows Setup" = "First Time Setup/First Time Setup Linux/Windows Setup.md"},
+      {"Work Setup" = "First Time Setup/First Time Setup Linux/Work Setup.md"},
+    ]}
+  ]},
+  {"Fmodel" = "Fmodel/Fmodel.md" },
+  {"Wwise it up" =  [
+    {"Structure" = "UsingWwise/Structure.md"},
+    {"Syncing with Payday" = [
+      {"Output Buses" = "UsingWwise/Output Buses.md"},
+      {"Switches" = "UsingWwise/Switches.md"},
+      {"States" = "UsingWwise/States.md"},
+      {"Parameters" = "UsingWwise/Parameters.md"},
+    ]},
+    { "Wwise information" = "UsingWwise/WwiseInfo.md"},
+  ]},
+  {"Enemies" = [
+    {"Standard" = [
+      {"Sound Effects" = [
+        {"Walking" = "Enemies/Standard/Sound Effects/Walking.md"},
+        {"Guard Lure Interact" = "Enemies/Standard/Sound Effects/Guard Lure Interact.md"},
+        {"Rappel" = "Enemies/Standard/Sound Effects/Rappel.md"},
+        {"Sliding" = "Enemies/Standard/Sound Effects/Sliding.md"},
+      ]},
+      {"Voice Lines" = [
+        {"Guards & SWAT" = "Enemies/Standard/Voice Lines/Guards & SWAT.md"},
+        {"Police" = "Enemies/Standard/Voice Lines/Police.md"},
+        {"Smalltalk Police" = "Enemies/Standard/Voice Lines/Small-Talk Police.md"},
+        {"Dispatch Pager" = "Enemies/Standard/Voice Lines/Dispatch.md"},
+        {"Dispatch Radio" = "Enemies/Standard/Voice Lines/Guard Radio Small Talk.md"},
+        {"First Response Megaphone" = "Enemies/Standard/Voice Lines/Megaphone Guy.md"},
+      ]},
+    ]},
+    {"Specials" = [
+      {"Sound Effects" = [
+        {"Bulldozer" = "Enemies/Specials/Sound Effects/Bulldozer.md"},
+        {"Cloaker" = "Enemies/Specials/Sound Effects/Cloaker.md"},
+        {"Grenadier" = "Enemies/Specials/Sound Effects/Nader.md"},
+        {"Shield" = "Enemies/Specials/Sound Effects/Shield.md"},
+        {"Sniper" = "Enemies/Specials/Sound Effects/Sniper.md"},
+        {"Techie" = "Enemies/Specials/Sound Effects/Techie.md"},
+        {"Drones" = "Enemies/Specials/Sound Effects/Drones.md"},
+        {"Zapper (taser)" = "Enemies/Specials/Sound Effects/Zapper.md"},
+      ]},
+      {"Voice Lines" = [
+        {"Bulldozer" = "Enemies/Specials/Voice Lines/Bulldozer.md"},
+        {"Cloaker" = "Enemies/Specials/Voice Lines/Cloaker.md"},
+        {"Grenadier" = "Enemies/Specials/Voice Lines/Nader.md"},
+        {"Shield" = "Enemies/Specials/Voice Lines/Shield.md"},
+        {"Techie" = "Enemies/Specials/Voice Lines/Techie.md"},
+        {"Drones" = "Enemies/Specials/Voice Lines/Drones.md"},
+        {"Zapper (taser)" = "Enemies/Specials/Voice Lines/Zapper.md"},
+        {"FBI" = "Enemies/Specials/Voice Lines/FBI.md"},
+      ]},
+    ]},
+  ]},
+  {"Environment SFX" = [
+    {"Building SFX" = [
+      {"Alarms" = "Environment SFX/Building SFX/Alarm.md"},
+      {"Elevator" = "Environment SFX/Building SFX/Elevator.md"},
+      {"Night Club Music" = "Environment SFX/Building SFX/Night Club Music.md"},
+    ]},
+  ]},
+  {"Player" = [
+    {"Interactions" = [
+      {"Phone" = "Player/Interactions/Player Phone.md"},
+      {"Phone Hacking Circle" = "Player/Interactions/Phone Hacking Circle.md"},
+      {"Elevator Prying" = "Player/Interactions/Elevator Prying.md"},
+      {"Radio Lure" = "Player/Interactions/Radio Lure.md"},
+    ]},
+    {"Overkill Weapons & Drone" = [
+      {"Overkill Delivery Drone" = "Player/Overkill Weapons/Overkill Delivery Drone.md"},
+      {"Sociopath" = "Player/Overkill Weapons/Sociopath.md"},
+    ]}
+  ]},
+  {"Music" = [
+    {"Main Menu" = "Music/Main Menu Music Event.md"},
+    {"Main Menu (jukebox)" = "Music/Main Menu Music Jukebox.md"},
+    {"Heist Music (jukebox)" = "Music/Updated Heist Jukebox.md"},
+  ]},
+  {"PAL-ing Your Mod" = [
+    {"Generic Audio Mod" = [
+      {"Generate Sound Data" = "PALing/UE PALing/Generate Sound Data.md"},
+      {"Folder Structure" = "PALing/UE PALing/Folder Structure.md"},
+      {"Paking" = "PALing/UE PALing/Paking.md"},
+    ]},
+    {"Main Menu (jukebox)" = [
+      {"Making it an Add-on" = "PALing/UE Main Menu PALing/Making it an Add-on.md"},
+    ]},
+    {"Heist Music (jukebox)" = [
+      {"Making it an Add-on" = "PALing/UE Jukebox PALing/Making it an Add-on.md"},
+    ]},
+  ]},
 ]
 
-# extra_css = ["stylesheets/extra.css"]
+extra_css = ["stylesheets/extra.css"]
 # extra_javascript = ["javascripts/extra.js"]
 
 [project.theme]
 # variant = "classic"
-# custom_dir = "overrides"
+custom_dir = "overrides"
 # favicon = "images/favicon.png"
 language = "en"
 features = [
@@ -37,12 +140,12 @@ features = [
   # "navigation.expand",
   "navigation.footer",
   "navigation.indexes",
-  "navigation.instant",
-  "navigation.instant.prefetch",
+  # "navigation.instant",
+  # "navigation.instant.prefetch",
   # "navigation.instant.progress",
   "navigation.path",
   # "navigation.prune",
-  "navigation.sections",
+  # "navigation.sections",
   # "navigation.tabs",
   # "navigation.tabs.sticky",
   "navigation.top",
@@ -54,8 +157,8 @@ features = [
 
 # logo = "assets/logo.png"
 
-# [project.theme.icon]
-# logo = "lucide/smile"
+[project.theme.icon]
+logo = "Icons/logo"
 
 # [project.theme.font]
 # text = "Inter"
@@ -78,13 +181,13 @@ scheme = "slate"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to system preference"
 
-# [[project.extra.social]]
-# icon = "fontawesome/brands/github"
-# link = "https://github.com/user/repo"
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/Gamest23/PD3WwiseAudioModdingZensical"
 
-# [[project.extra.social]]
-# icon = "fontawesome/brands/mastodon"
-# link = "https://fosstodon.org/@user"
+[[project.extra.social]]
+icon = "Icons/mws_logo_white"
+link = "https://modworkshop.net/user/gamest23"
 
 [project.markdown_extensions]
 abbr = {}
@@ -100,6 +203,7 @@ pymdownx.caret = {}
 pymdownx.details = {}
 pymdownx.emoji.emoji_generator = "zensical.extensions.emoji.to_svg"
 pymdownx.emoji.emoji_index = "zensical.extensions.emoji.twemoji"
+pymdownx.emoji.options.custom_icons = ["overrides/.icons",]
 pymdownx.highlight.anchor_linenums = true
 pymdownx.highlight.line_spans = "__span"
 pymdownx.highlight.pygments_lang_class = true

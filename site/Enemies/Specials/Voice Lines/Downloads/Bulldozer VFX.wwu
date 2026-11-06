@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{34F18CDA-0E40-41BE-A617-EB7C935B7259}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Bulldozer VFX" ID="{34F18CDA-0E40-41BE-A617-EB7C935B7259}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchContainer Name="Bulldozer Switch Cont" ID="{C97B007F-05DA-43B9-BD3E-BEC4AAF34C1D}" ShortID="460272505">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="GameAuxSendVolume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{B9F941BD-4D06-4C43-887A-8DAB8EBFA845}" ShortID="248922545">
+									<PropertyList>
+										<Property Name="ConeUse" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RadiusMax" Type="Real64" Value="4500"/>
+									</PropertyList>
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{8330A5F5-C2FD-44E3-B9F0-5731761D2E36}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>4500</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="bulldozer_taunt_generic" ID="{ED220CAD-A98B-4A86-9D4B-51D8634F3C77}" WorkUnitID="{014AA3E7-F6F1-4424-8D6A-B5C9E4C0B487}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="NPC_System" ID="{5F5899D2-19BA-43D3-BC14-382E4C8D88FD}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="enemy_comment" ID="{CB77D7F4-C653-4E40-9540-19D312FDAE54}" WorkUnitID="{014AA3E7-F6F1-4424-8D6A-B5C9E4C0B487}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="bulldozer_bullcharge" ID="{5D8B4B0E-C17B-4089-9889-ABDF5FDB9467}" ShortID="946722242">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="bulldozer_lost_visor" ID="{2E2667F7-35F2-4F04-99DA-95ACB99F0657}" ShortID="901037495">
+							<PropertyList>
+								<Property Name="GameAuxSendVolume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="NPC_System" ID="{5F5899D2-19BA-43D3-BC14-382E4C8D88FD}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="bulldozer_post_kill_taunt" ID="{8930F3CE-F5E5-4306-8716-238B57584E5D}" ShortID="444624139">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="bulldozer_shove_attack" ID="{7406D06E-07EB-47B9-9D4D-40EED73CF1C0}" ShortID="1073252271">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="bulldozer_super_attack" ID="{99D85ADD-EACB-4A09-891D-754CEEB6B23A}" ShortID="828409546">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="bulldozer_taunt_generic" ID="{7AB277E7-DAB1-4CBE-B99B-D25161F1AABC}" ShortID="558069346">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="bulldozer_taunt_player_explosion" ID="{12878FD3-C3EB-4C84-BF63-6AD074A73ACF}" ShortID="534467032">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="bulldozer_taunt_player_flashbang" ID="{C92E76B0-5E28-42DC-94BA-14356A4270D1}" ShortID="1036687818">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="death" ID="{B70B512B-4436-41AE-8360-A60C7EF41FBC}" ShortID="287160085">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="hurt" ID="{68912415-048C-4E1E-93CF-8A96524800DD}" ShortID="461088937">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{19EB03C1-77ED-4DB4-B970-02597C27AED1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<ObjectLists/>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="bulldozer_bullcharge" ID="{5D8B4B0E-C17B-4089-9889-ABDF5FDB9467}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="hurt" ID="{68912415-048C-4E1E-93CF-8A96524800DD}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="death" ID="{B70B512B-4436-41AE-8360-A60C7EF41FBC}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="bulldozer_shove_attack" ID="{7406D06E-07EB-47B9-9D4D-40EED73CF1C0}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="bulldozer_taunt_player_flashbang" ID="{C92E76B0-5E28-42DC-94BA-14356A4270D1}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="bulldozer_post_kill_taunt" ID="{8930F3CE-F5E5-4306-8716-238B57584E5D}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="bulldozer_taunt_player_explosion" ID="{12878FD3-C3EB-4C84-BF63-6AD074A73ACF}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="bulldozer_super_attack" ID="{99D85ADD-EACB-4A09-891D-754CEEB6B23A}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="bulldozer_taunt_generic" ID="{7AB277E7-DAB1-4CBE-B99B-D25161F1AABC}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="bulldozer_lost_visor" ID="{2E2667F7-35F2-4F04-99DA-95ACB99F0657}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="death" ID="{DC062A28-3854-4955-9993-8D2F6E79CEED}"/>
+								<ItemList>
+									<ItemRef Name="death" ID="{B70B512B-4436-41AE-8360-A60C7EF41FBC}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="bulldozer_super_attack" ID="{30195D68-E418-4D80-AD66-41021F629FC6}"/>
+								<ItemList>
+									<ItemRef Name="bulldozer_super_attack" ID="{99D85ADD-EACB-4A09-891D-754CEEB6B23A}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="bulldozer_taunt_player_flashbang" ID="{7710396C-A266-4227-B2BE-3AAEFBCDFFB5}"/>
+								<ItemList>
+									<ItemRef Name="bulldozer_taunt_player_flashbang" ID="{C92E76B0-5E28-42DC-94BA-14356A4270D1}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="hurt" ID="{BFF7397F-962A-44BE-BD10-2F08C6DBBC96}"/>
+								<ItemList>
+									<ItemRef Name="hurt" ID="{68912415-048C-4E1E-93CF-8A96524800DD}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="bulldozer_post_kill_taunt" ID="{B371749C-FF6C-4608-9091-264E9C0CA48E}"/>
+								<ItemList>
+									<ItemRef Name="bulldozer_post_kill_taunt" ID="{8930F3CE-F5E5-4306-8716-238B57584E5D}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="bulldozer_shove_attack" ID="{E3BFA5AA-0743-4275-A7B4-4E7815EE6932}"/>
+								<ItemList>
+									<ItemRef Name="bulldozer_shove_attack" ID="{7406D06E-07EB-47B9-9D4D-40EED73CF1C0}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="bulldozer_taunt_generic" ID="{ED220CAD-A98B-4A86-9D4B-51D8634F3C77}"/>
+								<ItemList>
+									<ItemRef Name="bulldozer_taunt_generic" ID="{7AB277E7-DAB1-4CBE-B99B-D25161F1AABC}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="bulldozer_lost_visor" ID="{DDBA76C6-E814-424D-B112-136A69BC0447}"/>
+								<ItemList>
+									<ItemRef Name="bulldozer_lost_visor" ID="{2E2667F7-35F2-4F04-99DA-95ACB99F0657}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="bulldozer_taunt_player_explosion" ID="{BD2A41E4-BFDF-43C4-BEB3-AF41FC0EADF9}"/>
+								<ItemList>
+									<ItemRef Name="bulldozer_taunt_player_explosion" ID="{12878FD3-C3EB-4C84-BF63-6AD074A73ACF}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="bulldozer_bullcharge" ID="{D42B4DED-8127-40FC-8928-EFCAA113F8F3}"/>
+								<ItemList>
+									<ItemRef Name="bulldozer_bullcharge" ID="{5D8B4B0E-C17B-4089-9889-ABDF5FDB9467}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

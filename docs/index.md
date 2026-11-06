@@ -1,174 +1,124 @@
 ---
-icon: lucide/rocket
+icon: material/home
 ---
 
-# Get started
+# :material-alert: Unreal Engine 5 Update makes this documentation irrelevant, please wait for a port of this in the future :material-alert:
 
-For full documentation visit [zensical.org](https://zensical.org/docs/).
+# This is being actively updated, do not use this until finished
 
-## Commands
+# Welcome to the Payday 3 Wwise/Event Audio Modding Guide!
 
-* [`zensical new`][new] - Create a new project
-* [`zensical serve`][serve] - Start local web server
-* [`zensical build`][build] - Build your site
+Now a little more Linux Friendly
 
-  [new]: https://zensical.org/docs/usage/new/
-  [serve]: https://zensical.org/docs/usage/preview/
-  [build]: https://zensical.org/docs/usage/build/
+Returning users from the original google doc, should go through the First Time Setup again. I promise this is the last time, and is required for proper following of the guides.
 
-## Examples
+“What are the benefits of replacing audio with Events instead of just using [this](https://modworkshop.net/mod/51045) <span class="dark">:Icons-mws_logo_white:</span><span class="light">:Icons-mws_logo_black:</span>?”
 
-### Admonitions
+Some of the more “simple” mods can use the PD3AudioModder tool, like replacing some small sound effects in the game. But some audio can have some strict expectations and can play weird/cut off with just simply replacing the audio directly without Wwise Events, or can even be impossible because of the way audio is handled in Papaya 3.
 
-> Go to [documentation](https://zensical.org/docs/authoring/admonitions/)
+With Event replacing, the audio can be as long as you want and can be fancy with transitions, strict list of audio to play, sequences, control of which audio to play randomly, and potentially more! 
 
-!!! note
+It will also have the advantage of making mods smaller in size with compression methods built into wwise unreal integration, and not needing to have the same audio file copied several times to replace multiple audio sounds.
 
-    This is a **note** admonition. Use it to provide helpful information.
+## Tools to install
 
-!!! warning
+Repak - I 100% recommend you add [this tool](https://modworkshop.net/mod/50337) <span class="dark">:Icons-mws_logo_white:</span><span class="light">:Icons-mws_logo_black:</span> here to your system as well, as it makes packing your mod significantly easier (this guide also uses it within the steps).
 
-    This is a **warning** admonition. Be careful!
+File Converter - I use [this tool](https://file-converter.io/?from=readme.md) to easily and locally convert files.
 
-### Details
+File Converter (Linux) - If you use Linux, you can use [this tool](https://github.com/Lich-Corals/linux-file-converter-addon) to convert local files just as easy.
 
-> Go to [documentation](https://zensical.org/docs/authoring/admonitions/#collapsible-blocks)
+## Things to keep in mind
 
-??? info "Click to expand for more info"
+All audio used for this is **REQUIRED** to be in the .wav format.
 
-    This content is hidden until you click to expand it.
-    Great for FAQs or long explanations.
+If you find some of the images hard to see, you can Right Click on them and "Open Image in New Tab" for a higher resolution view.
 
-## Code Blocks
+Table of Contents can be found on the left, and right of each page/guide.
 
-> Go to [documentation](https://zensical.org/docs/authoring/code-blocks/)
+## Getting started
 
-``` python hl_lines="2" title="Code blocks"
-def greet(name):
-    print(f"Hello, {name}!")  # (1)!
+If you're starting out for the first time, navigate to the appropriate `First Time Setup` section on the left.
 
+----
 
-greet("Python")
-```
+??? "Current Progress/Planned"
+    - [x] First Time Setup
 
-1.  > Go to [documentation](https://zensical.org/docs/authoring/code-blocks/#code-annotations)
+    - [ ] Tips
 
-    Code annotations allow to attach notes to lines of code.
+    - [ ] Wwise Information
 
-Code can also be highlighted inline: `#!python print("Hello, Python!")`.
+    - [x] Audio Obstruction
 
-## Content tabs
+    - [x] Standard Enemies SFX
 
-> Go to [documentation](https://zensical.org/docs/authoring/content-tabs/)
+    - [ ] Standard Enemies Voice Lines
+        - [x] Guards & SWAT
+        - [x] Police
+        - [ ] Smalltalk Police
+        - [x] Dispatch Pager Speech
+        - [x] Radio Dispatcher
+        - [x] First Responder Megaphone
 
-=== "Python"
+    - [ ] Specials SFX
+        - [x] Bulldozer
+        - [x] Cloaker
+        - [ ] Nader
+        - [x] Shield
+        - [ ] Sniper
+        - [x] Techie
+        - [x] Zapper
 
-    ``` python
-    print("Hello from Python!")
-    ```
+    - [ ] Specials Voice Lines
+        - [x] Bulldozer
+        - [x] Cloaker
+        - [x] Nader
+        - [x] Shield
+        - [x] Techie
+        - [ ] Drones
+        - [x] Zapper
 
-=== "Rust"
+    - [x] FBI
 
-    ``` rs
-    println!("Hello from Rust!");
-    ```
+    - [ ] Shade - Core Heists
+    - [ ] Shade - Side Hustles
+    - [ ] Shade - The Bad Apple
+    - [ ] Shade - Smash & Grab
+    - [ ] Shade - Tutorials
 
-## Diagrams
+    - [ ] Subtitle integration
 
-> Go to [documentation](https://zensical.org/docs/authoring/diagrams/)
+    - [ ] Building SFX
+        - [x] Alarms
+        - [x] Elevator
+        - [ ] Night Club Music
 
-``` mermaid
-graph LR
-  A[Start] --> B{Error?};
-  B -->|Yes| C[Hmm...];
-  C --> D[Debug];
-  D --> B;
-  B ---->|No| E[Yay!];
-```
+    - [ ] Player Interactions
+        - [x] Player Phone
+        - [ ] Elevator Prying
+        - [x] Radio Lure
 
-## Footnotes
+    - [ ] Player Overkill Weapons
+        - [x] Sociopath
+        - [ ] Potentially more
 
-> Go to [documentation](https://zensical.org/docs/authoring/footnotes/)
+    - [x] Mod Add-ons
 
-Here's a sentence with a footnote.[^1]
+    - [ ] Misc.
+        - [x] Main Menu Music Event
+        - [ ] Phone Hacking Circle
+        - [x] Overkill Delivery Drone
 
-Hover it, to see a tooltip.
+    - [x] Paking Your Mod
 
-[^1]: This is the footnote.
+    - [x] Paking Your Heist Jukebox Mod
 
+    - [x] Paking Your Main Menu Jukebox Mod
 
-## Formatting
+??? "Current Versions"
+    Wwise Project ver `0.8.5`
 
-> Go to [documentation](https://zensical.org/docs/authoring/formatting/)
+    Unreal Engine Project ver `1.0`
 
-- ==This was marked (highlight)==
-- ^^This was inserted (underline)^^
-- ~~This was deleted (strikethrough)~~
-- H~2~O
-- A^T^A
-- ++ctrl+alt+del++
-
-## Icons, Emojis
-
-> Go to [documentation](https://zensical.org/docs/authoring/icons-emojis/)
-
-* :sparkles: `:sparkles:`
-* :rocket: `:rocket:`
-* :tada: `:tada:`
-* :memo: `:memo:`
-* :eyes: `:eyes:`
-
-## Maths
-
-> Go to [documentation](https://zensical.org/docs/authoring/math/)
-
-$$
-\cos x=\sum_{k=0}^{\infty}\frac{(-1)^k}{(2k)!}x^{2k}
-$$
-
-!!! warning "Needs configuration"
-    Note that MathJax is included via a `script` tag on this page and is not
-    configured in the generated default configuration to avoid including it
-    in a pages that do not need it. See the documentation for details on how
-    to configure it on all your pages if they are more Maths-heavy than these
-    simple starter pages.
-
-<script id="MathJax-script" src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [["\\(", "\\)"]],
-      displayMath: [["\\[", "\\]"]],
-      processEscapes: true,
-      processEnvironments: true
-    },
-    options: {
-      ignoreHtmlClass: ".*|",
-      processHtmlClass: "arithmatex"
-    }
-  };
-
-  document$.subscribe(() => {
-    MathJax.startup.output.clearCache()
-    MathJax.typesetClear()
-    MathJax.texReset()
-    MathJax.typesetPromise()
-  })
-</script>
-
-## Task Lists
-
-> Go to [documentation](https://zensical.org/docs/authoring/lists/#using-task-lists)
-
-* [x] Install Zensical
-* [x] Configure `zensical.toml`
-* [x] Write amazing documentation
-* [ ] Deploy anywhere
-
-## Tooltips
-
-> Go to [documentation](https://zensical.org/docs/authoring/tooltips/)
-
-[Hover me][example]
-
-  [example]: https://example.com "I'm a tooltip!"
+    Guide ver `0.8.5`
