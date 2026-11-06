@@ -5,7 +5,7 @@ icon: material/music-box-multiple
 [1]: https://gamest23.github.io/PD3WwiseAudioModding/First%20Time%20Setup/UE%20Project/
 [3]: https://gamest23.github.io/PD3WwiseAudioModding/WwiseInfo/WwiseInfo/
 
-This guide is an add-on to [Updated Heist Jukebox](https://modworkshop.net/mod/48329) <span class="dark">:Icons-mws_logo_white:</span><span class="light">:Icons-mws_logo_black:</span>
+This guide is an add-on to [Jukebox Mod](https://modworkshop.net/mod/48329) <span class="dark">:Icons-mws_logo_white:</span><span class="light">:Icons-mws_logo_black:</span>
 
 Guide Contributors/thanks: [ershiozer](https://modworkshop.net/user/ershiozer) <span class="dark">:Icons-mws_logo_white:</span><span class="light">:Icons-mws_logo_black:</span> [ZeroZM0](https://modworkshop.net/user/zerozm) <span class="dark">:Icons-mws_logo_white:</span><span class="light">:Icons-mws_logo_black:</span>
 
