@@ -100,8 +100,8 @@ nav = [
   ]},
   {"Music" = [
     {"Main Menu" = "Music/Main Menu Music Event.md"},
-    {"Main Menu (jukebox)" = "Music/Main Menu Music Jukebox.md"},
-    {"Heist Music (jukebox)" = "Music/Updated Heist Jukebox.md"},
+    {"Main Menu (Jukebox)" = "Music/Main Menu Music Jukebox.md"},
+    {"Heist Music (Jukebox)" = "Music/Updated Heist Jukebox.md"},
   ]},
   {"PAL-ing Your Mod" = [
     {"Generic Audio Mod" = [
@@ -109,10 +109,10 @@ nav = [
       {"Folder Structure" = "PALing/UE PALing/Folder Structure.md"},
       {"Paking" = "PALing/UE PALing/Paking.md"},
     ]},
-    {"Main Menu (jukebox)" = [
+    {"Main Menu (Jukebox)" = [
       {"Making it an Add-on" = "PALing/UE Main Menu PALing/Making it an Add-on.md"},
     ]},
-    {"Heist Music (jukebox)" = [
+    {"Heist Music (Jukebox)" = [
       {"Making it an Add-on" = "PALing/UE Jukebox PALing/Making it an Add-on.md"},
     ]},
   ]},
