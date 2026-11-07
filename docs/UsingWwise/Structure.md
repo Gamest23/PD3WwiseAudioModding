@@ -58,4 +58,4 @@ There is a lot to consider when making mods with Wwise, though at the same time 
 
 You can truly do what you wish in the audio's volume and behaviour using this software. The guides listed on the left is to truly point the path of the Event that plays what you wish to replace, and general guidance for things such as Switches and States. What you do with it and how it behaves is completely up to you.
 
-Using something like [Payday Audio Modder](https://modworkshop.net/mod/51045) <span class="dark">:Icons-mws_logo_white:</span><span class="light">:Icons-mws_logo_black:</span>, means (using the above image as an example) you are replacing the Sound Voice files only. The behaviour being up to what Starbreeze developers chose, not yours.
+Using something like [PD3AudioModder](https://modworkshop.net/mod/51045) <span class="dark">:Icons-mws_logo_white:</span><span class="light">:Icons-mws_logo_black:</span>, means (using the above image as an example) you are replacing the Sound Voice files only. The behaviour being up to what Starbreeze developers chose, not yours.

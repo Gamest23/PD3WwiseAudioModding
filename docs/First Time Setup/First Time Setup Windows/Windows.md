@@ -28,13 +28,14 @@ There are 2 ways making mods at the moment.
 !!! info
     Creating custom heist jukebox add-on mods, or next to any jukebox add-on mods, will require the install of the Modkit
 
-If you wish to just use a blank Unreal Engine Project, then continue. If you wish to use the Modkit, then follow the [Payday 3 Modding Documentation](https://payday3-modding.github.io/Documentation/payday3-modding/index.html)
-
 !!! warning
     Linux users may struggle with some of the steps for the Modkit
 
+If you wish to use the Modkit, then follow the [Payday 3 Modding Documentation](https://payday3-modding.github.io/Documentation/payday3-modding/index.html) instead. You can still use this website to learn how to use Wwise and how to use it for specifically Payday 3. Start at [:simple-wwise: Wwise Information](../../UsingWwise/WwiseInfo.md) once you have it setup.
 
-This process also **requires** admin privilege access on your windows device
+If you wish to just use a blank Unreal Engine Project, then continue.
+
+This process also **requires** admin privilege access on your windows device.
 
 ----
 

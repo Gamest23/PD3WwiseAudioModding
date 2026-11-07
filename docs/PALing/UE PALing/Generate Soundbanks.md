@@ -2,7 +2,9 @@
 icon: simple/unrealengine
 ---
 
-# Generate Soundbanks...
+# This Section is for an empty Unreal Project only
+
+## Generate Soundbanks...
 
 In the Wwise Browser within the Unreal Project, click `Generate Soundbanks...`
 

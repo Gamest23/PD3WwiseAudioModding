@@ -33,7 +33,11 @@ Once you found them, create a new folder. Name it to what your mod name is. Then
 
 You need to re-name those 3 files. The name itself does not matter. What **does** matter, is at the end you put `_P`. Without it, your mod will not load.
 
-Example: `WalkingSFX_P`
+Example:
+
+* `WalkingSFX_P.pak`
+* `WalkingSFX_P.utoc`
+* `WalkingSFX_P.ucas`
 
 ## Media Files
 
@@ -89,9 +93,10 @@ Put your mod's main folder (the folder you made, and placed files inside) to:
 
 Create the folder `~mods` if you don't have one.
 
-!!! note
-    If you do not know where Payday 3 is installed on your device:
+??? "If you do not know where Payday 3 is installed on your device"
 
     Go to your Steam Library and Right-Click on Payday 3. Then hover over `Manage`, then click `Browse local files`
 
     ![](img/Browse Local Files.png)
+
+Then Launch Payday 3, and see if the audio you replaced works.
