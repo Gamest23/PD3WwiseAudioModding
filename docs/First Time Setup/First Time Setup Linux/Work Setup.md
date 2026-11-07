@@ -30,4 +30,4 @@ Make sure it is to be always enabled, and Map as a network drive in Windows gues
 
 ----
 
-[Windows First Time Setup](../First%20Time%20Setup%20Windows/Windows.md)
+[:fontawesome-brands-windows: Windows First Time Setup](../First%20Time%20Setup%20Windows/Windows.md)

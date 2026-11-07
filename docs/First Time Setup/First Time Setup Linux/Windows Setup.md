@@ -72,4 +72,4 @@ Check Status:
 
 ----
 
-[Work Setup](../First%20Time%20Setup%20Linux/Work%20Setup.md)
+[:material-folder-cog: Work Setup](../First%20Time%20Setup%20Linux/Work%20Setup.md)

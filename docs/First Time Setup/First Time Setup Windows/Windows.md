@@ -38,4 +38,4 @@ This process also **requires** admin privilege access on your windows device
 
 ----
 
-[Installing Visual Studio 2022](../First%20Time%20Setup%20Windows/Visual%20Studio.md)
+[:material-microsoft-visual-studio: Installing Visual Studio 2022](../First%20Time%20Setup%20Windows/Visual%20Studio.md)

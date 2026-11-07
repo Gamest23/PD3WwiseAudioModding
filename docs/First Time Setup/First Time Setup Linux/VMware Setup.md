@@ -1,5 +1,5 @@
 ---
-icon: simple/vmware
+icon: Icons/vmware
 ---
 
 # VMware Setup
@@ -50,4 +50,4 @@ If the option was enabled, the machine should automatically start for you after 
 
 ----
 
-[Windows Setup](../First%20Time%20Setup%20Linux/Windows%20Setup.md)
+[:fontawesome-brands-windows: Windows Setup](../First%20Time%20Setup%20Linux/Windows%20Setup.md)

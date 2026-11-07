@@ -41,4 +41,4 @@ At this point, we have done a lot, to make sure everything will work smoothly, g
 
 ----
 
-[Post Restart](../First%20Time%20Setup%20Windows/Post%20Restart.md)
+[:fontawesome-solid-computer: Post Restart](../First%20Time%20Setup%20Windows/Post%20Restart.md)

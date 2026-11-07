@@ -23,6 +23,18 @@ You are going to create a new project, name your project `PAYDAY3` and ensure yo
 
 Once you create the project, it will load the project itself. This may take a while depending on your CPU speed, this will only happen on the first launch.
 
+## Reduce Computer Resource Usage
+
+Clicking on the 3 lines here:
+
+![](img/Realtime.png)
+
+I recommend you disable `Realtime`
+
+Then click on `Lit` and change it to `Unlit`
+
+![](img/Unlit.png)
+
 ## Project Settings
 
 Go to Edit > Project Settings

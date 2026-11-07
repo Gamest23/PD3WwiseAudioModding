@@ -12,6 +12,10 @@ Payday 3 Icon:
 
 
 
+AudioKinetic logo:
+
+:Icons-audiokinetic:
+
 Wwise Icons:
 
 :Wwise-actormixer:
@@ -63,6 +67,16 @@ Fmodel:
 :Fmodel-fmodel:
 :Fmodel-fmodelmono:
 :Fmodel-fmodelcolor:
+
+
+
+VMware:
+
+:Icons-vmware:
+
+Winboat:
+
+:Icons-winboat:
 
 
 

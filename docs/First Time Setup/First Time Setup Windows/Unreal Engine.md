@@ -42,4 +42,4 @@ Once done, we can move on to Wwise.
 
 ----
 
-[Installing Wwise](../First%20Time%20Setup%20Windows/Wwise.md)
+[:simple-wwise: Installing Wwise](../First%20Time%20Setup%20Windows/Wwise.md)

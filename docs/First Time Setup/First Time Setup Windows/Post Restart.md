@@ -14,4 +14,4 @@ You can open the project by opening the `Guide Project.wproj` file
 
 ----
 
-[UE Project](../First%20Time%20Setup%20Windows/UE%20Project.md)
+[:simple-unrealengine: UE Project](../First%20Time%20Setup%20Windows/UE%20Project.md)

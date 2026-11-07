@@ -6,7 +6,7 @@ icon: material/home
 
 # This is being actively updated, do not use this until finished
 
-# Welcome to the Payday 3 Wwise/Event Audio Modding Guide!
+# :material-home: Welcome to the Payday 3 Wwise/Event Audio Modding Guide!
 
 Now a little more Linux Friendly
 
@@ -18,27 +18,23 @@ Some of the more “simple” mods can use the PD3AudioModder tool, like replaci
 
 With Event replacing, the audio can be as long as you want and can be fancy with transitions, strict list of audio to play, sequences, control of which audio to play randomly, and potentially more! 
 
-It will also have the advantage of making mods smaller in size with compression methods built into wwise unreal integration, and not needing to have the same audio file copied several times to replace multiple audio sounds.
+It will also have the advantage of making mods smaller in size with compression methods built into Wwise Unreal integration, and not needing to have the same audio file copied several times to replace multiple audio sounds.
 
 ## Tools to install
 
-Repak - I 100% recommend you add [this tool](https://modworkshop.net/mod/50337) <span class="dark">:Icons-mws_logo_white:</span><span class="light">:Icons-mws_logo_black:</span> here to your system as well, as it makes packing your mod significantly easier (this guide also uses it within the steps).
+Repak - Even though modding no longer uses *just* .pak files, it's still requried to have one .pak file to contain the Wwise media (your audio files) for your events to play, [this tool](https://modworkshop.net/mod/50337) <span class="dark">:Icons-mws_logo_white:</span><span class="light">:Icons-mws_logo_black:</span> makes it slightly easier to make them.
 
-File Converter - I use [this tool](https://file-converter.io/?from=readme.md) to easily and locally convert files.
+File Converter - I use [this tool :fontawesome-brands-windows:](https://file-converter.io/?from=readme.md) to easily and locally convert files, instead of relying on online tools and their restrictions.
 
-File Converter (Linux) - If you use Linux, you can use [this tool](https://github.com/Lich-Corals/linux-file-converter-addon) to convert local files just as easy.
+File Converter (Linux) - If you use Linux, you can use [this tool :simple-linux:](https://github.com/Lich-Corals/linux-file-converter-addon) to convert local files just as easy.
 
-## Things to keep in mind
-
-All audio used for this is **REQUIRED** to be in the .wav format.
+## Images
 
 If you find some of the images hard to see, you can Right Click on them and "Open Image in New Tab" for a higher resolution view.
 
-Table of Contents can be found on the left, and right of each page/guide.
-
 ## Getting started
 
-If you're starting out for the first time, navigate to the appropriate `First Time Setup` section on the left.
+If you're starting out for the first time, navigate to either [:fontawesome-brands-windows: Windows](./First Time Setup/First Time Setup Windows/Windows.md) or [:simple-linux: Linux](./First Time Setup/First Time Setup Linux/Linux.md)
 
 ----
 

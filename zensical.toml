@@ -30,6 +30,7 @@ nav = [
   ]},
   {"Fmodel" = "Fmodel/Fmodel.md" },
   {"Wwise it up" =  [
+    { "Wwise information" = "UsingWwise/WwiseInfo.md"},
     {"Structure" = "UsingWwise/Structure.md"},
     {"Syncing with Payday" = [
       {"Output Buses" = "UsingWwise/Output Buses.md"},
@@ -37,9 +38,9 @@ nav = [
       {"States" = "UsingWwise/States.md"},
       {"Parameters" = "UsingWwise/Parameters.md"},
     ]},
-    { "Wwise information" = "UsingWwise/WwiseInfo.md"},
   ]},
   {"Enemies" = [
+    {"Enemies" = "Enemies/Enemies.md"},
     {"Standard" = [
       {"Sound Effects" = [
         {"Walking" = "Enemies/Standard/Sound Effects/Walking.md"},
@@ -87,6 +88,7 @@ nav = [
     ]},
   ]},
   {"Player" = [
+    {"Player" = "Player/Player.md"},
     {"Interactions" = [
       {"Phone" = "Player/Interactions/Player Phone.md"},
       {"Phone Hacking Circle" = "Player/Interactions/Phone Hacking Circle.md"},
@@ -105,9 +107,9 @@ nav = [
   ]},
   {"PAL-ing Your Mod" = [
     {"Generic Audio Mod" = [
-      {"Generate Sound Data" = "PALing/UE PALing/Generate Sound Data.md"},
-      {"Folder Structure" = "PALing/UE PALing/Folder Structure.md"},
-      {"Paking" = "PALing/UE PALing/Paking.md"},
+      {"Generate Soundbanks" = "PALing/UE PALing/Generate Soundbanks.md"},
+      {"Making a PAL" = "PALing/UE PALing/Making a PAL.md"},
+      {"Package Project" = "PALing/UE PALing/Package Project.md"},
     ]},
     {"Main Menu (Jukebox)" = [
       {"Making it an Add-on" = "PALing/UE Main Menu PALing/Making it an Add-on.md"},
@@ -119,7 +121,7 @@ nav = [
 ]
 
 extra_css = ["stylesheets/extra.css"]
-# extra_javascript = ["javascripts/extra.js"]
+extra_javascript = ["javascripts/extra.js"]
 
 [project.theme]
 # variant = "classic"
@@ -146,7 +148,7 @@ features = [
   "navigation.path",
   # "navigation.prune",
   # "navigation.sections",
-  # "navigation.tabs",
+  "navigation.tabs",
   # "navigation.tabs.sticky",
   "navigation.top",
   "navigation.tracking",
@@ -186,7 +188,7 @@ icon = "fontawesome/brands/github"
 link = "https://github.com/Gamest23/PD3WwiseAudioModdingZensical"
 
 [[project.extra.social]]
-icon = "Icons/mws_logo_white"
+icon = "Icons/mws_logo"
 link = "https://modworkshop.net/user/gamest23"
 
 [project.markdown_extensions]

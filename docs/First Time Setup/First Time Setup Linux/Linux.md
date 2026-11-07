@@ -8,14 +8,14 @@ icon: simple/linux
 
 Unfortunately, there is no way to make Wwise Event mods "natively" on linux. Even with Wine or its forks like Proton.
 
-This is due to [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/), as far as I'm concerned this cannot be "installed" within a Wine environment and have Unreal Engine/Wwise Launcher recognize it.
+This is due to [Visual Studio 2022 :material-microsoft-visual-studio:](https://visualstudio.microsoft.com/downloads/), as far as I'm concerned this cannot be "installed" within a Wine environment and have Unreal Engine/Wwise Launcher recognize it.
 
 Currently the "best" way is to install a virtual machine software and set up Windows. 
 
 !!! warning
-    Unreal Engine **requires** DirectX support, so not all Virtual Machine software, like [VirtualBox](https://www.virtualbox.org/), can be used.
+    Unreal Engine **requires** DirectX support, so not all Virtual Machine software, like [VirtualBox :simple-virtualbox:](https://www.virtualbox.org/), can be used.
 
-[VMware](https://www.vmware.com/) currently is the only program that has support for a "Virtual GPU". Maybe at somepoint the program [WinBoat](https://winboat.app/) can be used instead, when it does get proper Hardware Acceleration support. (last update 9/9/2026)
+[VMware :Icons-vmware:](https://www.vmware.com/) currently is the only program that has support for a "Virtual GPU". Maybe at somepoint the program [WinBoat :Icons-winboat:](https://winboat.app/) can be used instead, when it does get proper Hardware Acceleration support. (last update 9/9/2026)
 
 I am aware of some Virtual Machine software supports GPU Passthrough, though I am not familiar with it and thus will not be covered.
 
@@ -23,7 +23,7 @@ I am aware of some Virtual Machine software supports GPU Passthrough, though I a
 
 Running another operating system is not a light task, especially for the purpose of our use case.
 
-[Officially](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/esx-upgrade/upgrading-esxi-hosts-upgrade/esxi-requirements-upgrade/esxi-hardware-requirements-upgrade.html), the hardware requirements are as follows:
+[Officially :simple-broadcom:](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/esx-upgrade/upgrading-esxi-hosts-upgrade/esxi-requirements-upgrade/esxi-hardware-requirements-upgrade.html), the hardware requirements are as follows:
 
 - 2 CPU cores
 
@@ -67,4 +67,4 @@ These resources may be helpful if you do have either installed:
 
 ----
 
-[VMware Setup](../First%20Time%20Setup%20Linux/VMware%20Setup.md)
+[:Icons-vmware: VMware Setup](../First%20Time%20Setup%20Linux/VMware%20Setup.md)

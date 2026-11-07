@@ -2,6 +2,8 @@
 icon: Fmodel/fmodel
 ---
 
+# :Fmodel-fmodel: Fmodel
+
 ## Download
 
 Download Fmodel here: [fmodel.app](https://fmodel.app/)
@@ -45,7 +47,7 @@ And click OK.
 Download the [Mapping File](dwn/PAYDAY3-5.5.4-0+UE5-unknown.usmap) (10/29/2026) and place it where the FModel.exe is located
 
 !!! warning
-    Mapping files can get outdated in a matter of a Payday 3 update. Latest versions can be either found here, the official [Modworkshop discord](https://discord.gg/Eear4JW), part of the Modkit, or by generating your own. [See here for more details](https://payday3-modding.github.io/Documentation/payday3-modding/getting-started/fmodel-setup.html#_get_a_mappings_file)
+    Mapping files can get outdated in a matter of a Payday 3 update. Latest versions can be either found here, the official [Modworkshop discord :simple-discord:](https://discord.gg/Eear4JW), part of the Modkit, or by generating your own. [See here for more details](https://payday3-modding.github.io/Documentation/payday3-modding/getting-started/fmodel-setup.html#_get_a_mappings_file)
 
 Click Settings at the top
 

@@ -12,6 +12,8 @@ https://gamest23.github.io/PD3WwiseAudioModding
 
 ~~[mkdocs-open-in-new-tab 1.0.8](https://pypi.org/project/mkdocs-open-in-new-tab/)~~
 
+See here: [open-in-new-tab Zensical](https://zensical.org/docs/compatibility/mkdocs/plugins/?h=ope#open-in-new-tab)
+
 ## To run locally:
 
 - Requires pip
